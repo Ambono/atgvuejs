@@ -1,0 +1,40 @@
+.seating-plan {
+    display: none;
+    width: 100vw;
+    max-width: 800px;
+    min-height: 600px;
+    height: auto;
+}
+
+.seating-plan__intro {
+    padding: 15px 20px 0 20px;
+    position: relative;
+}
+
+.seating-plan__intro-title {
+    padding-right: 30px;
+}
+
+
+.seating-plan__close {
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: block;
+}
+.seating-plan__close-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: rotate(45deg);
+    fill:  $brandPrimary;
+}
+
+.modal {
+    .seating-plan {
+        display: block;
+    }
+}

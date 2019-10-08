@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{!-- Meta --}}
+        <meta charset="utf-8">
+        <meta name="keywords" content="{Key Words}" />
+        <meta name="description" content="{Description}" />
+        <meta name="author" content="{Author}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {{!-- / Meta --}}
+
+        {{!-- 
+            Twitter Cards
+            More Info: https://dev.twitter.com/cards/types/summary 
+            Validate At: https://cards-dev.twitter.com/validator 
+        --}}
+        <meta name="twitter:card" content="{Summary}" />
+        <meta name="twitter:site" content="{URL}" />
+        <meta name="twitter:title" content="{Page Title}" />
+        <meta name="twitter:description" content="{Page Description}" />
+        <meta name="twitter:image" content="{Page Image}" />
+        {{!-- / Twitter Cards --}}
+
+        {{!-- 
+            Facebook Open Graph
+            Validate At: https://developers.facebook.com/tools/debug/
+        --}}
+        <meta property="og:url" content="{URL}" />
+        <meta property="og:title" content="{Page Title}" />
+        <meta property="og:description" content="{Page Description}" />
+        <meta property="og:image" content="{Page Image}" />
+        {{!-- / Facebook Open Graph --}}
+
+        {{!-- Apple Mobile Web App Info --}}
+        <meta name="apple-mobile-web-app-title" content="{Project Name}">
+        <meta name="application-name" content="{Project Name}">
+        {{!-- / Apple Mobile Web App Info --}}
+
+        {{!-- Icons And Favicons --}}
+		<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="/assets/images/favicons/android-chrome-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/assets/images/favicons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/assets/images/favicons/manifest.json">
+		<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#da532c">
+		<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+        {{!-- / Icons And Favicons --}}
+
+
+        {{!-- Stylesheets --}}
+        <link rel="stylesheet" href="/assets/css/app.css" type="text/css">
+        {{!-- / Stylesheets --}}
+
+        {{!-- Fonts --}}
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        {{!-- / Fonts --}}
+
+        <title>{{title}}</title>
+
+    </head>
+    <body>
+
+        {{!-- Main Content Wrapper --}}
+        <div class="main">
+                {{!-- Main Content - Pulled In Through Handlebars --}}
+                {% body %}
+                {{!-- Main Content --}}
+        </div>
+        {{!-- / Main Content Wrapper --}}
+
+        {{!-- Scripts --}}
+        <script src="/assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+        {{!-- / Scripts --}}
+        
+    </body>
+</html>

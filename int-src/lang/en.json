@@ -1,0 +1,653 @@
+{
+	"components": {
+		"calendar": {
+			"calendar": {
+				"data-carousel-next": "Toggle range carousel to next set of results",
+				"data-carousel-prev": "Toggle range carousel to previous set of results",
+				"loader": {
+					"title": "Loading dates and times"
+				}
+			}
+		},
+		"forms": {
+			"banner": {
+				"account": "My Account",
+				"basket": "Basket",
+				"browseAloud": "BrowseAloud",
+				"home": "Home",
+				"language": "Language",
+				"login": "Login"
+			},
+			"checkoutForm": {
+				"ThreeDseucre-overlay__text": "Please wait we've sent message to your bank. Please follow the verification instructions below from your bank / card issuer.",
+				"buyTickets": "Buy Tickets",
+				"loader": {
+					"title": "Processing payment"
+				},
+				"paypal-overlay__text": "Please complete the steps in the paypal window that is open to continue with the process.",
+				"paypal_account_tokenization_failed": "PayPal tokenization failed. See details: {details}",
+				"paypal_default_error_message": "There was an error tokenizing PayPal! Message: {message}",
+				"paypal_flow_failed": "Unable to initialize PayPal flow. Are your options correct? {details}"
+			},
+			"modules": {
+				"billingAddress": {
+					"billingAddressLine1": "Address Line 1*",
+					"billingAddressLine2": "Address Line 2",
+					"billingCountry": "Country*",
+					"billingCountryErrror": "",
+					"billingCountyState": "County/State",
+					"billingCountyStateError": "",
+					"billingPostCode": "Postcode/Zip*",
+					"billingPostCodeError": "",
+					"billingTownCity": "Town/City*",
+					"billingTownCityError": "",
+					"formLegend": "Billing Address"
+				},
+				"billingDetails": {
+					"detailsEmailAddress": "Email address*",
+					"detailsEmailAddressConfirmationError": "",
+					"detailsEmailAddressError": "",
+					"detailsEmailAddressVerify": "Confirm email address*",
+					"detailsFirstName": "First Name*",
+					"detailsFirstNameError": "",
+					"detailsLastName": "Last name*",
+					"detailsLastNameError": "",
+					"detailsPhoneNumber": "Phone number*",
+					"detailsPhoneNumberError": "",
+					"yourDetails": "Your details"
+				},
+				"cardDetails": {
+					"cardExpiryMonth": "Month:",
+					"cardExpiryYear": "Year:",
+					"cardName": "Name Of Card Holder*",
+					"cardNumber": "Card Number*",
+					"expiryDate": "Expiry Date",
+					"legendCardDetails": "Card details",
+					"securityCode": "Security Code*"
+				},
+				"delivery": {
+					"addressLine1": "Address Line 1",
+					"addressLine2": "Address Line 2",
+					"addressLongError": "",
+					"chooseDeliveryAddress": "Choose delivery Method",
+					"chooseDeliveryAddressAriaLabel": "Select {description} as the delivery method, this costs @:currency{price}.",
+					"copyAddress": "Delivery address is same as Billing Address",
+					"country": "Country*",
+					"county": "County/State",
+					"deliveryAddress": "Delivery address",
+					"deliveryAddressAriaLabel": "Delivery address is same as Billing Address.",
+					"postCode": "Postcode/Zip*",
+					"price": "@:currency{price}",
+					"townCity": "Town/City*"
+				},
+				"errorMessages": {
+					"validation-addressLine1": "",
+					"validation-addressLine2": "",
+					"validation-cardName": "",
+					"validation-cardNumber": "",
+					"validation-country": "",
+					"validation-countyState": "",
+					"validation-emailAddress": "",
+					"validation-emailAddressConfirmation": "",
+					"validation-expiryMonth": "",
+					"validation-expiryYear": "",
+					"validation-firstName": "",
+					"validation-highlight__text": "We've noticed something isn't quite right with the following:",
+					"validation-hightlight__title": "Please check your details are correct",
+					"validation-lastName": "",
+					"validation-phoneNumber": "",
+					"validation-postcode": "",
+					"validation-securityNumber": "",
+					"validation-townCityLine1": "",
+					"validation-townCityLine2": ""
+				},
+				"main": {
+					"any": "Any (Max ",
+					"aria-lable": "Click to re-select the date and time you require.",
+					"date-selected": "{dateselected}",
+					"ticket": "ticket"
+				},
+				"paymentMethod": {
+					"methodCreditDebit": "Credit/Debit card",
+					"methodCreditDebitAriaLabel": "Select Credit/Debit card as the payment method.",
+					"methodPaypal": "Paypal",
+					"methodPaypalAriaLabel": "Select PayPal as the payment method.",
+					"paymentMethodLegend": "Choose a payment method"
+				},
+				"showInfo": {
+					"date-selected": "{dateselected}",
+					"fee": "fee",
+					"location": "{location}",
+					"priceband": "{priceband}",
+					"showtitle": "{showtitle}"
+				},
+				"terms": {
+					"formDataPaymentMethod-paypal": "Complete purchase via Paypal",
+					"formDataPaymentMethod-standard": "Buy Tickets",
+					"form_legend-GDPR": "GDPR Questions"
+				},
+				"ticketInsurance": {
+					"form__information-text": "Our 'ticket reimbursement cover' with securemybooking.com provides you with a 'full reimbursement' if you cannot attend your performance due to:",
+					"form__label form__label--price": "{title} This is the recommended option and has a cost of @:currency{price}",
+					"form__legend": "Choose Ticket Insurance",
+					"form__price": "@:currency{price}",
+					"icon-list__item-LearnMore": "Learn more",
+					"icon-list__item-LearnMore-aria-label": "Learn more about ticket insurance.",
+					"icon-list__item-accident": "Accident, injury or illness",
+					"icon-list__item-flood": "Flood, fire, adverse weather (snow, fog, frost or storm)",
+					"icon-list__item-strikes": "Strikes, riots, civil commotion, martial law",
+					"icon-list__item-transitDelay": "Transit delay"
+				}
+			}
+		},
+		"productCards": {
+			"productCard": {
+				"perAdult": " per adult",
+				"product_card__price": "@:currency{price}",
+				"product_card__quantity-title": "How many would you like?",
+				"quantity-decrement": "",
+				"quantity-increment": ""
+			},
+			"productCards": {
+				"loader": {
+					"title": "Loading extras"
+				}
+			}
+		},
+		"seatMap": {
+			"concessions": {
+				"priceband-price": "Seats at @:currency{seatPrice}",
+				"seat-price": "@:currency{seatPrice}",
+				"title": "Concessions"
+			},
+			"seatMapModal": {
+				"intro-title": "Seat Plan"
+			},
+			"seatMapOverview": {
+				"aria-label": "Click to view the seating plan",
+				"next": "Next",
+				"price-filters__title": "Selected Seats",
+				"selectASeat": "Select A Seat To Continue",
+				"selectBestSeats": "Let the system select the best seats",
+				"selectBestSeatsInArea": "Let the system select the best seats in {area}",
+				"selectNumberSeats": "Select {number} More Seats to Continue",
+				"selected-seats__overview-title": "You've selected",
+				"selected-seats__remove_all-link": "Remove all",
+				"selected-seats__seat-location": "Select a seat",
+				"selected-seats__seat-price": "@:currency{price}",
+				"selected-seats__total-price": "@:currency{price}",
+				"selected-seats__total-title": "Total price",
+				"selected__seats-re-select-link": "Change amount of seats required",
+				"selectedseat-info": "{seatinfo}",
+				"selectedseat-location": "{seatlocation}",
+				"selectedseat-number": "{seatnumber}"
+			},
+			"seatSelection": {
+				"loader": {
+					"title": "Loading seat map"
+				}
+			}
+		},
+		"shared": {
+			"errorMessages": {
+				"errorMessages": {
+					"error-messages__title": "Something went wrong!"
+				}
+			},
+			"header": {
+				"header": {
+					"header__timer-text": "Time remaining "
+				}
+			},
+			"orderSummary": {
+				"modules": {
+					"addressDetails": {
+						"order-summary__extra-title": "Delivery Address"
+					},
+					"basketExtras": {
+						"order-summary__extra-quantity": "{quantity} X @:currency{price}"
+					},
+					"deliveryMethod": {
+						"order-summary__extra-quantity": "@:currency{price}"
+					},
+					"localExtras": {
+						"order-summary__extra-quantity": "{extraQuantity} x @:currency{price}"
+					},
+					"ticketInsurance": {
+						"order-summary__extra-quantity": "@:currency{price}"
+					},
+					"tickets": {
+						"aria-label": "Click to view the seating plan",
+						"fee-text": " fee",
+						"order-summary__seat-plan": "Seating Plan",
+						"order-summary__ticket-breakdown": "(@:currency{price} + @:currency{bookingFee} {fee})",
+						"order-summary__ticket-quantity": "{length} x @:currency{price}",
+						"order-summary__ticket-title": "{tickettitle}",
+						"selected-seats__seat-location": "{seatlocation}",
+						"selected-seats__seat-number": "{seatnumber}"
+					}
+				},
+				"orderSummary": {
+					"next": "Next",
+					"order-summary__intro-title": "Order Summary",
+					"order-summary__total-price": "@:currency{basketTotal}",
+					"order-summary__total-title": "Total price"
+				}
+			},
+			"ticketOptions": {
+				"ticketOption": {
+					"ticket-selection__option-percentage": "",
+					"ticket-selection__option-text": ""
+				}
+			}
+		},
+		"ticketOptions": {
+			"ticketoption": {
+				"any": "Any",
+				"numberTickets": "{ticketNumber} tickets"
+			}
+		}
+	},
+	"core": {
+		"helpers": {
+			"calendar": {
+				"calendar": {
+					"days": {
+						"Friday": {
+							"long": "Friday",
+							"text": "Fri"
+						},
+						"Monday": {
+							"long": "Monday",
+							"text": "Mon"
+						},
+						"Saturday": {
+							"long": "Saturday",
+							"text": "Sat"
+						},
+						"Sunday": {
+							"long": "Sunday",
+							"text": "Sun"
+						},
+						"Thursday": {
+							"long": "Thursday",
+							"text": "Thu"
+						},
+						"Tuesday": {
+							"long": "Tuesday",
+							"text": "Tue"
+						},
+						"Wednesday": {
+							"long": "Wednesday",
+							"text": "Wed"
+						},
+						"currentday": "{currentday}"
+					},
+					"months": {
+						"April": {
+							"short": "Apr",
+							"text": "April"
+						},
+						"August": {
+							"short": "Aug",
+							"text": "August"
+						},
+						"December": {
+							"short": "Dec",
+							"text": "December"
+						},
+						"February": {
+							"short": "Feb",
+							"text": "February"
+						},
+						"January": {
+							"short": "Jan",
+							"text": "January"
+						},
+						"July": {
+							"short": "Jul",
+							"text": "July"
+						},
+						"June": {
+							"short": "Jun",
+							"text": "June"
+						},
+						"March": {
+							"short": "Mar",
+							"text": "March"
+						},
+						"May": {
+							"short": "May",
+							"text": "May"
+						},
+						"November": {
+							"short": "Nov",
+							"text": "November"
+						},
+						"October": {
+							"short": "Oct",
+							"text": "October"
+						},
+						"September": {
+							"short": "Sep",
+							"text": "September"
+						}
+					}
+				}
+			},
+			"createBlockContent": {
+				"from": "from",
+				"onSale": "On Sale",
+				"soldOut": "Sold Out",
+				"unavailable": "Unavailable"
+			}
+		},
+		"objects": {
+			"SeatMapFilters": {
+				"price-filters__item-input": "@:currency{price}",
+				"price-filters__item-input-aria-label": "",
+				"price-filters__item-label": "@:currency{price}"
+			},
+			"loading": {
+				"title": "Loading..."
+			},
+			"phoneNumber": {
+				"error": "Invalid phone number {number}"
+			},
+			"seatMap": {
+				"stageTitle": "Stage"
+			},
+			"seatMapAreas": {
+				"area-selection__item-aria-label": "Filter Seat Map To Show ${title}"
+			},
+			"seatMapToolTip": {
+				"actionBTN": {
+					"remove": "Remove",
+					"selectSeat": "Select This Seat"
+				}
+			},
+			"vtSeatRules": {
+				"prohibitedNumberSeatsError": "The venue does not permit this selection because it would leave a prohibited number {number} of adjacent seats available."
+			}
+		}
+	},
+	"currency": "£",
+	"errorMessages": {
+		"address": {
+			"address": {
+				"long": "Please enter a valid address",
+				"short": "Address"
+			},
+			"country": {
+				"long": "Please select a country",
+				"short": "Country"
+			},
+			"countyState": {
+				"long": "Please enter a valid County / State",
+				"short": "County / State"
+			},
+			"postcode": {
+				"long": "Please enter a valid postcode",
+				"short": "Postcode"
+			},
+			"townCity": {
+				"long": "Please enter a valid town / city",
+				"short": "Town / City"
+			}
+		},
+		"billing": {
+			"addressLine1": "Billing - @:errorMessages.address.address.short Line 1",
+			"addressLine2": "Billing - @:errorMessages.address.address.short Line 2",
+			"country": "Billing - @:errorMessages.address.country.short",
+			"county": "Billing - @:errorMessages.address.countyState.short",
+			"postCode": "Billing - @:errorMessages.address.postcode.short",
+			"townCity": "Billing - @:errorMessages.address.townCity.short"
+		},
+		"delivery": {
+			"addressLine1": "Delivery - @:errorMessages.address.address.short Line 1",
+			"addressLine2": "Delivery - @:errorMessages.address.address.short Line 2",
+			"country": "Delivery - @:errorMessages.address.country.short ",
+			"county": "Delivery - @:errorMessages.address.countyState.short ",
+			"deliveryMethod": {
+				"long": "Please select a delivery method",
+				"short": "Delivery method"
+			},
+			"postCode": "Delivery - @:errorMessages.address.postcode.short ",
+			"townCity": "Delivery - @:errorMessages.address.townCity.short"
+		},
+		"deliveryAddress": {
+			"country": {
+				"long": "Delivery outside the UK is not supported",
+				"short": "Country"
+			}
+		},
+		"gdpr": {
+			"ageConsent": {
+				"long": "Please confirm your age",
+				"short": "Confirm age"
+			},
+			"allTermsAndConditions": "All terms &amp; conditions must be accepted.",
+			"termsConditions": {
+				"long": "Please accept the terms and conditions",
+				"short": "Terms and conditions"
+			}
+		},
+		"insurance": {
+			"ticketInsurance": {
+				"long": "Please choose the cover of ticket insurance cover you desire",
+				"short": "Ticket insurance"
+			}
+		},
+		"issues": {
+			"validation-highlight__text": "We've noticed something isn't quite right with the following:",
+			"validation-highlight__title": "Please check your details are correct"
+		},
+		"payment": {
+			"cardName": {
+				"long": "Please make sure you have entered a valid name for the credit card holder",
+				"short": "Card Name"
+			},
+			"cardNumber": {
+				"long": "Please make sure you've entered a valid card number",
+				"short": "Card number"
+			},
+			"expiryMonth": {
+				"long": "Please select a month",
+				"short": "Expiry month"
+			},
+			"expiryYear": {
+				"long": "Please select a year",
+				"short": "Expiry year"
+			},
+			"paymentMethod": {
+				"long": "Please choose a method of payment",
+				"short": "Payment method"
+			},
+			"securityCode": {
+				"long": "Please make sure you've entered 3 or 4 digits",
+				"short": "Security Code"
+			}
+		},
+		"user": {
+			"emailAddress": {
+				"long": "Please enter a valid email address",
+				"short": "Email address"
+			},
+			"emailAddressConfirmation": {
+				"long": "Email addresses must match",
+				"short": "Email address confirmation"
+			},
+			"firstName": {
+				"long": "Please enter a valid first name",
+				"short": "First name"
+			},
+			"lastName": {
+				"long": "Please enter a valid last name",
+				"short": "Last name"
+			},
+			"phoneNumber": {
+				"long": "Please enter a valid phone number",
+				"short": "Phone number"
+			}
+		}
+	},
+	"modals": {
+		"basket": {
+			"basketChangeWarning": "Making changes to the date & time or seat amounts  will mean you need to select your seats again.",
+			"dataaccept": "Make Changes",
+			"datadeny": "Keep my seats",
+			"usermessageinfotitle": "Please note"
+		},
+		"cookies": {
+			"cookiewarningtext": "We use cookies to ensure you get the best experience on our website.",
+			"cookiewarningtitle": "This website uses cookies",
+			"data-accept": "Continue"
+		},
+		"session": {
+			"createsession": "Creating Session",
+			"sessionexpireddesc": "Sorry, your booking has expired.",
+			"sessionexpireddescbutton": "Start again",
+			"usermessageinfotitle": "Your session expired"
+		}
+	},
+	"object": {
+		"loading": {
+			"title": "Loading dates and times"
+		}
+	},
+	"others": {
+		"msg1": "dummymsg1",
+		"msg2": "dummymsg2",
+		"msg3": "dummymsg3",
+		"msg4": "dummymsg4",
+		"msg5": "dummymsg5"
+	},
+	"service": {
+		"modules": {
+			"api": {
+				"offerSeats": {
+					"erroroccured": "An error has occured in offering your seats.  Please refresh your browser and try again.",
+					"novalidoffer": "No valid offers were found."
+				},
+				"paypalClienToken": {
+					"generrormsg": "Failed to return valid paypal client token"
+				},
+				"postCheckout": {
+					"errmsgpart1": "In processing your payment. Please contact support at ",
+					"errmsgpart2": "with your booking reference "
+				},
+				"postCheckoutStage1": {
+					"errmsg": "In making your booking: ",
+					"errmsg2": ""
+				},
+				"postCheckoutStage2": {
+					"errmsgpart1": "In processing your payment. Please contact support at",
+					"errmsgpart2": "with your booking reference"
+				},
+				"postCheckoutThreeD": {
+					"errmsg": "In making your booking: ",
+					"errmsg2": ""
+				},
+				"savePatron": {
+					"errmsgpart1": "In processing your PayPal payment (",
+					"errmsgpart2": "). Please contact support at",
+					"errmsgpart3": "with your booking reference"
+				},
+				"seatMapBestSeat": {
+					"errmsg": "The system failed to select the best seats... Please try again.",
+					"errmsg2": ""
+				}
+			},
+			"service": {
+				"basket": {
+					"basketChangeWarning": "Making changes to the date & time or seat amounts  will mean you need to select your seats again.",
+					"dataaccept": "Make Changes",
+					"datadeny": "Keep my seats",
+					"usermessageinfotitle": "Please note"
+				},
+				"checkout": {
+					"ExtrasPackages": "Extras Packages",
+					"Ticketsto": "Tickets to",
+					"basketerrmsg": "Your basket is empty. Please go back to Choose date and time",
+					"generrormsg": "An error has occured: ",
+					"tdseccallbackerrmsg": "Processing 3D payment"
+				}
+			}
+		}
+	},
+	"views": {
+		"additionalExtras": {
+			"add-extras__intro-text": "Make your visit to {eventTitle} special. Take a look at our range of luxurious gifts, snacks, drinks and VIP experiences available at a great price. ",
+			"add-extras__intro-title": "Make your visit even more memorable",
+			"add-extras__skip-btn": "No thanks, skip to checkout",
+			"add-extras__skip-btn-aria-label": "Not Interested in any extras? , Click to skip to the checkout.",
+			"add-extras__skip-text": "Not interested in any extras?",
+			"makeYourVisit": "Make your visit to ",
+			"special": " special.",
+			"takeALook": " Take a look at our range of luxurious gifts, snacks, drinks and VIP experiences available at a great price."
+		},
+		"checkout": {
+			"checkout__intro-title": "Your Basket",
+			"loader": {
+				"title": "Loading checkout"
+			},
+			"ordersummary__title": "Order Summary"
+		},
+		"confirmation": {
+			"loader": {
+				"title": "Loading confirmation"
+			},
+			"order-confirmation__btn": "Continue",
+			"order-confirmation__ref": "Order no # {orderNumber}",
+			"order-confirmation__text": "Your order has been successful, we've sent you an email confirmation to the email you provided us.",
+			"order-confirmation__title": "Thanks for your order"
+		},
+		"error": {
+			"404": "Page Not Found",
+			"error": "Error",
+			"eventInfoInvalid": "Application Error: Event Info Invalid",
+			"goToEvent": "Go To Event"
+		},
+		"main": {
+			"additionalExtras__router-link": "Click to re-select any additional extras you require.",
+			"additionalExtras__step-title": "Add Extras",
+			"booking-app__step-edit": "Click to re-select the seats you require.",
+			"booking-app__step-edit-extras": "Click to re-select any additional extras you require.",
+			"booking-app__step-full-link": "Click to re-select the seats you require.",
+			"booking-app__step-full-link-extras": "Click to re-select any additional extras you require.",
+			"booking__app-title": "Number of tickets",
+			"checkout__step-title": "Checkout",
+			"extras_added": "Extras Added",
+			"no_extra_added": "No Extras Added",
+			"selectSeat-seats": "seats",
+			"selectSeat__step-title": "Select your seat",
+			"showSelect__step-title": "Choose a date and time"
+		},
+		"seatSelection": {
+			"error-messages__title-max-seats-selected": "Select A Seat (upto a maximum of 10) To Continue",
+			"error-messages__title-other": "Select {seatsLeft} Seats to Continue",
+			"price-filters__key-item--disabled": "Disabled seating",
+			"price-filters__key-item--non-standard": "Non-standard",
+			"price-filters__key-item--selected": "Selected Seat(s)",
+			"price-filters__key-item--unavailable": "Unavailable",
+			"price-filters__title": "Seat prices",
+			"seat-map__limit-reached-title": "Seat Selection Not Permitted",
+			"seatsToContinue": " Seats to Continue",
+			"select": "Select "
+		},
+		"ticketSelect": {
+			"showLessTickets": "Show less tickets",
+			"showMoreTickets": "Show more tickets",
+			"ticket-selection__load-more": "...",
+			"ticket-selection__text": "We'll make sure to find you the correct number of consecutive seats and will only return performance dates/times with suitable availability.  Please note: this event is only suitable for people aged 5 and over.",
+			"ticket-selection__title": "How many tickets are you looking for?"
+		},
+		"wechat": {
+			"msg1": "dummymsg1",
+			"msg2": "dummymsg2",
+			"msg3": "dummymsg3",
+			"msg4": "dummymsg4",
+			"msg5": "dummymsg5"
+		}
+	}
+}

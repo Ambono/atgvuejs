@@ -1,0 +1,9 @@
+node_modules/
+yarn.lock
+yarn-error.log
+coverage/
+package-lock.json
+./docs
+.vs/
+.vs/slnx.sqlite
+int-dist/

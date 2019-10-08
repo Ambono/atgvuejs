@@ -1,0 +1,176 @@
+/** 
+* Typography
+* Used to add base properties to text based tags
+*/
+
+/* Mixins */ 
+@mixin h1 {
+    @include set-font($headingFont, 24, 29, $textColor, 700);
+    @include mq(screen768) {
+        @include set-font($headingFont, 28, 34, $textColor, 700);
+    }
+    @include mq(screen1000) {
+        @include set-font($headingFont, 32, 38, $textColor, 700);
+    }
+}
+
+@mixin h2 {
+    @include set-font($headingFont, 20, 24, $textColor, 700);
+    @include mq(screen768) {
+        @include set-font($headingFont, 24, 29, $textColor, 700);
+    }
+}
+
+@mixin h3 {
+    @include set-font($headingFont, 20, 24, $textColor, 300);
+    @include mq(screen768) {
+        @include set-font($headingFont, 22, 26, $textColor, 300);
+    }
+    @include mq(screen1000) {
+        @include set-font($headingFont, 24, 29, $textColor, 300);
+    }
+}
+
+@mixin h4 {
+    @include set-font($headingFont, 18, 22, $textColor, 700);
+}
+
+@mixin h5 {
+    @include set-font($bodyFont, 16, 24, $textColor, 300);
+}
+
+@mixin p {
+    @include set-font($bodyFont, 16, 24, $textColor, 300);
+}
+
+@mixin small {
+    @include set-font($bodyFont, 14, 17, $textColor, 300);
+}
+
+@mixin anchor {
+    @include set-font($headingFont, 14, 17, $linkColor, 300);
+
+    &.anchor--large {
+        @include set-font($headingFont, 16, 19, $linkColor, 300);
+    }
+}
+
+@mixin label {
+    @include set-font($bodyFont, 16, 24, $textColor, 300);
+}
+
+/* Typography Settings */
+
+// Heading 1
+h1, .h1 {
+   @include h1();
+   margin: 0;
+}
+
+// Heading 2
+h2, .h2 {
+    @include h2();
+    margin: 0;
+}
+
+// Heading 3
+h3, .h3 {
+    @include h2();
+    margin: 0;
+}
+
+// Heading 4
+h4, .h4 {
+    @include h4();
+    margin: 0;
+}
+
+// Heading 5, dd, label
+h5, .h5, p, li, dd, label {
+    @include h5();
+    margin: 0;
+}
+
+// Label
+label {
+    @include label();
+    margin: 0;
+}
+
+// Paragraph
+p {
+    @include p();
+    margin: 0;
+}
+
+// Small
+small, .small {
+   @include small();
+   margin: 0;
+}
+
+/* Links */
+a, .anchor {
+    @include anchor();
+    margin: 0;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+
+    &:focus, &:hover {
+        color: $linkColorHover;
+    }
+
+    /* Large Modifier */
+    // Defined within mixin
+}
+
+/* Data Lists */
+dd {
+    margin-left:0;
+}
+
+/* Helpers */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Lists */
+ul, ol {
+    margin: 30px 0;
+    padding: 0 0 0 30px;
+
+    li {
+        margin: 5px 0px;
+
+        ul, ol {
+            margin: 10px 0;
+        }
+    }
+}
+
+/* Default Image */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Code Block */
+code {
+    display: block;
+    text-align: left;
+}
+
+pre {
+    overflow-x: auto;
+    tab-size: 4; 
+}
+
+/* Generic */
+strong {
+    font-weight: 700;
+}

@@ -1,0 +1,448 @@
+/** 
+* Forms
+* Used to add base properties to form elements.
+*/
+
+/* Main Styles */ 
+
+/* Form */ 
+.form {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+/* Input */ 
+input,
+.form__input {
+    width: 100%;
+    display: block;
+    height: 48px;
+    padding-left: 15px;
+    border-style: none;
+    border: $inputBorder;
+    border-radius: 2px;
+    transition: border 0.3s ease;
+
+    &[disabled] {
+        border: $inputBorderDisabled;
+    }
+
+    &:focus {
+        border: $inputBorderActive;
+    }
+
+    &.invalid {
+        border-color: $error;
+    }
+}
+
+/* Select */ 
+select,
+.form__select {
+    width: 100%;
+    border-style: none;
+    border: $inputBorder;
+    border-radius: 2px;
+    background-color: $white;
+    height: 48px;
+    position: relative;
+    padding-left: 10px;
+    
+    // Removes default select arrow
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    // Add new down arrow
+    background-image: url('../images/svg/icons/arrow-drop-down.svg');
+    background-size: 24px 24px;
+    background-position: 97% 12px;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+
+    &[disabled] {
+        border: $inputBorderDisabled;
+    }
+
+    &:focus {
+        border: $inputBorderActive;
+    }
+}
+
+// IE Removal of default drop down arrow
+select::-ms-expand {
+    display: none;
+}
+
+/* Radio Buttons */ 
+input[type="radio"],
+.form__radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    
+    // Position inputs off screen
+    top: auto;
+    left: -99999px;
+
+    // Create custom labels
+    &+.form__label {
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        padding-left: 34px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: transparent;
+            border: 2px solid $brandPrimary;
+            margin-right: 10px;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 10px;
+            border-radius: 100%;
+            height: 10px;
+            background-color: $brandPrimary;
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            opacity: 0;
+            transition: 0.3s ease-in-out opacity;
+            cursor: pointer;
+        }
+    }
+
+    // Handle Checked State
+    &:checked {
+        &+.form__label {
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* Check boxes */ 
+input[type="checkbox"],
+.form__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    
+    // Position inputs off screen
+    top: auto;
+    left: -99999px;
+
+    // Create custom labels
+    &+.form__label {
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        padding-left: 34px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            display: block;
+            width: 18px;
+            height: 18px;
+            background-color: transparent;
+            border: 2px solid $brandPrimary;
+            margin-right: 10px;
+            border-radius: 2px;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 3px;
+            background-color: $white;
+            position: absolute;
+            left: 6px;
+            top: 12px;
+            opacity: 0;
+            transition: 0.3s ease-in-out opacity;
+            cursor: pointer;
+        }
+    }
+
+    // Handle Checked State
+    &:checked {
+        &+.form__label {
+            &:before {
+                background-color: $brandPrimary;
+            }
+
+            &:after {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* labels */ 
+label, 
+.form__label {
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+
+    // Handle the invalid item state
+    &.invalid {
+        color: $error;
+    }
+}
+
+/* Form Tooltip */ 
+.form__tool-tip {
+    @include p();
+    margin-left: auto;
+    min-width: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    color: $brandPrimary;
+    font-weight: normal;
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    text-align: center;
+}
+
+/* Fieldset & Legend */ 
+fieldset,
+.form__fieldset {
+    border: none;
+    border-bottom: 1px solid $fieldsetBorder;
+    padding: 0;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+
+    // Disable border bottom for nested fieldsets
+    fieldset,
+    .form__fieldset {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    // Disable border bottom on last fieldset
+    &:last-of-type {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+legend,
+.form__legend {
+    @include h3();
+    
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+
+    // Handle invalid sections
+    &.invalid {
+        color: $error;
+    }
+}
+
+/* Submit */ 
+.form__submit {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 25px;
+}
+
+.form__submit-icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-top: -2px;
+    margin-right: 8px;
+}
+
+/* Rows & Columns */ 
+.form__row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.form__column {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Form Price */ 
+.form__price {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Form Information */ 
+.form__information {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form__information-text {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Error Message */ 
+.form__error {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form__error-message {
+    @include p();
+    display: block;
+    color: $error;
+    margin-top: 5px;
+}
+
+/* Warning Message */ 
+.form__warning {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: rgb(255, 204, 204);
+}
+
+.form__warning-text {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Modifiers */ 
+/**
+* Curve
+* Adds a slight curve to the input field
+*/
+.input--curve {
+    border-radius: 15px;
+}
+
+/**
+* Round
+* Adds a round style to the input field
+*/
+.input--round {
+    border-radius: 80%;
+}
+
+/**
+* Row Spaced Out
+* Adds justify content settings to space out inner contents.
+*/ 
+.form__row--spaced {
+    justify-content: space-between;
+}
+
+/** 
+* Column Half
+* Adds a half style to the column.
+*/
+.form__column--half {
+    width: 100%;
+}
+
+/**
+* Form Input Small
+* Applies a small width to the input field.
+*/
+.form__input--small {
+    max-width: 50%;
+}
+
+/**
+* Label Price
+* Applies an offset to allow absolute positioned price.
+*/
+.form__label--price {
+    position: relative;
+    padding-right: 50px;
+    width: 100%;
+} 
+
+/**
+* Select Half
+* Applies a 50% width to the form select boxes.
+*/
+.form__select--half {
+    width: 49%;
+}
+
+/**
+* Telephone country dial code prefix specifier.
+*/
+.form__select--countryDialcode {
+    width: 40%;
+}
+
+/**
+* Form Input for a phone number
+* Applies sufficient width to enter a phone number to the input field.
+*/
+.form__input--phone {
+    max-width: 40%;
+}
+
+/** 
+* Legend Label
+* Applies a label style to the legend.
+*/
+.form__legend--label {
+    @include label();
+    margin-bottom: 10px;
+}
+
+/* Media Queries */ 
+@include mq($from: screen600) {
+    .form__column--half {
+        width: 49%;
+    
+        &:first-child {
+            margin-right: 2%;
+        }
+    }    
+}

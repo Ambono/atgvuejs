@@ -1,0 +1,203 @@
+/** 
+* Ticket Selection
+* Styles associated with the ticket selection component.
+*/
+
+/* Main Styles */ 
+.ticket-selection {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: $containerMaxSize;
+    margin: 0 auto;
+}
+
+.ticket-selection__intro {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.ticket-selection__title {
+    @include h1();
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: $black;
+}
+
+.ticket-selection__text {
+    max-width: 740px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.ticket-selection__options {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    overflow: hidden;
+    max-height: 470px;
+    transition: max-height 0.3s ease;
+}
+
+.ticket-selection__option {
+    width: 100%;
+    display: block;
+    flex-flow: wrap;
+    justify-content: center;
+    border: 1px solid $grey2;
+    background-color: $white;
+    color: $grey1;
+    padding: 15px 10px;
+    margin: 0 0 20px 0;
+    min-height: 77px;
+    transition: background-color 0.2s ease, color 0.2s ease; 
+
+    &.active, &:hover {
+        background-color: $ticketItemFillColor;
+        color: $white;
+        
+        .ticket-selection__option-percentage {
+            color: $white;
+        }
+        
+        .ticket-selection__option-icon {
+            fill: $white;
+        }
+    }
+}
+
+.ticket-selection__option-text {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ticket-selection__option-percentage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.ticket-selection__option-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-right: 5px;
+    fill: $availabilityGrey;
+}
+
+.ticket-selection__load-more {
+    @include h5();
+    color: $linkColor;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.ticket-selection__load-more-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: transform 0.3s ease;
+    fill: $linkColor;
+}
+
+/* Data Changes */ 
+/**
+* Show All Results
+* Increases the component height to show the hidden items
+*/
+.ticket-selection[data-show-all="true"] {
+    .ticket-selection__options {
+        max-height: 9999px;
+    }
+
+    .ticket-selection__load-more-icon {
+        transform: rotate(180deg);
+    }
+}
+
+/* Modifiers */
+/**
+* Availability Percentage Colours
+* Adjusts colours based on percentage numbers
+*/
+.ticket-selection__option-percentage--green {
+    color: $availabilityGreen;
+
+    .ticket-selection__option-icon {
+        fill: $availabilityGreen;
+    }
+}
+
+.ticket-selection__option-percentage--red {
+    color: $availabilityRed;
+
+    .ticket-selection__option-icon {
+        fill: $availabilityRed;
+    }
+}
+
+.ticket-selection__option-percentage--orange {
+    color: $availabilityOrange;
+
+    .ticket-selection__option-icon {
+        fill: $availabilityOrange;
+    }
+}
+
+.ticket-selection__option-percentage--grey {
+    color: $availabilityGrey;
+
+    .ticket-selection__option-icon {
+        fill: $availabilityGrey;
+    }
+}
+
+/**
+* Disabled Option
+* Adds a disabled style to the option
+*/ 
+.ticket-selection__option {
+    &[disabled] {
+        cursor: not-allowed;
+        color: $grey1;
+        background: transparent;
+        opacity: 0.5;
+
+        &:hover, &:focus {
+            .ticket-selection__option-percentage {
+                color: $grey1;
+            }
+        }
+    }
+}
+
+/* Media Queries */ 
+@include mq($from: screen600) {
+    .ticket-selection__options {
+        max-height: unset;
+    }
+
+    .ticket-selection__option {
+        width: 114px;
+        min-height: 64px;
+        margin: 0 20px 20px 0;
+    }
+
+    .ticket-selection__load-more {
+        display: none;
+    }
+}

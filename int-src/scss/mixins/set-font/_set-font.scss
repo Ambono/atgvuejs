@@ -1,0 +1,11 @@
+/**
+* Set Font
+* Used to set the base font styles to a tag.
+*/
+@mixin set-font($font,$size,$lineheight,$color,$weight){
+    font-family: $font;
+    font-weight: $weight;
+    font-size: rem($size);
+    line-height: $lineheight * 1px;
+    color: $color;
+}

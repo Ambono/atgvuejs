@@ -1,0 +1,172 @@
+/** 
+* Booking App
+* Styles associated with the booking app wrapper component.
+*/
+
+/* Main Styles */ 
+.booking-app {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.booking-app__step {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px $grey2 solid;
+}
+
+.booking-app__step-full-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.booking-app__step-intro {
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.3s ease;
+    transition-delay: 0.42s;
+}
+
+.booking-app__step-title {
+    @include h2();
+    transition: color 0.3s ease;
+    transition-delay: 0.42s;
+    color: $grey1;
+    width: calc(100% - 110px);
+}
+
+.booking-app__step-edit {
+    @include small();
+    width: 110px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+    color: $grey1;
+    text-decoration: none;
+    transition: 0.3s ease color;
+    position: relative;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.booking-app__edit-icon {
+    width: 15px;
+    height: 15px;
+    fill: $editIconColor;
+    margin-left: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.booking__app__step-edit--long {
+    display: none;
+}
+
+.booking__app__step-edit--short {
+    display: flex;
+}
+
+.booking-app__step-content {
+    width: 100%;
+    height: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.booking-app__step-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px;
+    position: relative;
+    background-color: $offWhite;
+}
+
+/* Modifiers */
+/**
+* Active
+* Defines the styles for when the stage is active
+*/
+.booking-app__step--active {
+
+    .booking-app__step-intro {
+        background-color: $bookingStepBackgroundColor;
+
+        .booking-app__step-title {
+            color: $white;
+        }
+
+        .booking-app__step-edit {
+            display: none;
+            color: $white;
+        }
+    }
+
+    .booking-app__step-content {
+        height: auto;
+    }
+}
+
+/**
+* Full Width
+* Removes the horizontal padding from the step
+*/
+.booking-app__step--full {
+    .booking-app__step-container {
+        padding: 0;
+    }
+}
+
+/* Media Queries */ 
+@include mq($from: screen480) {
+    .booking-app__step-title {
+        width: auto;
+    }
+
+    .booking-app__step-edit {
+        width: auto;
+    }
+}
+
+@include mq($from: screen600) {
+    .booking-app__step-intro {
+        padding: 30px 40px;
+    }
+
+    .booking-app__step-container {
+        padding: 30px 40px;
+    }
+}
+
+@include mq($from: screen768) {
+
+    .booking-app__step-intro {
+        padding: 30px 60px;
+    }
+
+    .booking-app__step-container {
+        padding: 60px;
+    }
+
+    .booking__app__step-edit--long {
+        display: flex;
+    }
+
+    .booking__app__step-edit--short {
+        display: none;
+    }
+}

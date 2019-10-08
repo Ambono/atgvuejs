@@ -1,0 +1,653 @@
+{
+	"components": {
+		"calendar": {
+			"calendar": {
+				"data-carousel-next": "Toggle range carousel to next set of resultsSAM",
+				"data-carousel-prev": "Toggle range carousel to previous set of resultsSAM",
+				"loader": {
+					"title": "Loading dates and timesSAM"
+				}
+			}
+		},
+		"forms": {
+			"banner": {
+				"account": "My Account SAM",
+				"basket": "BasketSAM",
+				"browseAloud": "BrowseAloudSAM",
+				"home": "HomeSAM",
+				"language": "LanguageSAM",
+				"login": "LoginSAM"
+			},
+			"checkoutForm": {
+				"ThreeDseucre-overlay__text": "Please wait we've sent message to your bank. Please follow the verification instructions below from your bank / card issuer.SAM",
+				"buyTickets": "Buy TicketsSAM",
+				"loader": {
+					"title": "Processing paymentSAM"
+				},
+				"paypal-overlay__text": "Please complete the steps in the paypal window that is open to continue with the process.SAM",
+				"paypal_account_tokenization_failed": "PayPal tokenization failed. See details: {details}SAM",
+				"paypal_default_error_message": "There was an error tokenizing PayPal! Message: {message}SAM",
+				"paypal_flow_failed": "Unable to initialize PayPal flow. Are your options correct? {details}SAM"
+			},
+			"modules": {
+				"billingAddress": {
+					"billingAddressLine1": "Address Line 1*SAM",
+					"billingAddressLine2": "Address Line 2SAM",
+					"billingCountry": "Country*SAM",
+					"billingCountryErrror": "SAM",
+					"billingCountyState": "County/StateSAM",
+					"billingCountyStateError": "SAM",
+					"billingPostCode": "Postcode/Zip*SAM",
+					"billingPostCodeError": "SAM",
+					"billingTownCity": "Town/City*SAM",
+					"billingTownCityError": "SAM",
+					"formLegend": "Billing AddressSAM"
+				},
+				"billingDetails": {
+					"detailsEmailAddress": "Email address*SAM",
+					"detailsEmailAddressConfirmationError": "SAM",
+					"detailsEmailAddressError": "SAM",
+					"detailsEmailAddressVerify": "Confirm email address*SAM",
+					"detailsFirstName": "First Name*SAM",
+					"detailsFirstNameError": "SAM",
+					"detailsLastName": "Last name*SAM",
+					"detailsLastNameError": "SAM",
+					"detailsPhoneNumber": "Phone number*SAM",
+					"detailsPhoneNumberError": "SAM",
+					"yourDetails": "Your detailsSAM"
+				},
+				"cardDetails": {
+					"cardExpiryMonth": "Month:SAM",
+					"cardExpiryYear": "Year:SAM",
+					"cardName": "Name Of Card Holder*SAM",
+					"cardNumber": "Card Number*SAM",
+					"expiryDate": "Expiry DateSAM",
+					"legendCardDetails": "Card detailsSAM",
+					"securityCode": "Security Code*SAM"
+				},
+				"delivery": {
+					"addressLine1": "Address Line 1SAM",
+					"addressLine2": "Address Line 2SAM",
+					"addressLongError": "SAM",
+					"chooseDeliveryAddress": "Choose delivery MethodSAM",
+					"chooseDeliveryAddressAriaLabel": "Select {description} as the delivery method, this costs @:currency{price}.SAM",
+					"copyAddress": "Delivery address is same as Billing AddressSAM",
+					"country": "Country*SAM",
+					"county": "County/StateSAM",
+					"deliveryAddress": "Delivery addressSAM",
+					"deliveryAddressAriaLabel": "Delivery address is same as Billing Address.SAM",
+					"postCode": "Postcode/Zip*SAM",
+					"price": "@:currency{price}",
+					"townCity": "Town/City*SAM"
+				},
+				"errorMessages": {
+					"validation-addressLine1": "SAM",
+					"validation-addressLine2": "SAM",
+					"validation-cardName": "SAM",
+					"validation-cardNumber": "SAM",
+					"validation-country": "SAM",
+					"validation-countyState": "SAM",
+					"validation-emailAddress": "SAM",
+					"validation-emailAddressConfirmation": "SAM",
+					"validation-expiryMonth": "SAM",
+					"validation-expiryYear": "SAM",
+					"validation-firstName": "SAM",
+					"validation-highlight__text": "We've noticed something isn't quite right with the following:SAM",
+					"validation-hightlight__title": "Please check your details are correctSAM",
+					"validation-lastName": "SAM",
+					"validation-phoneNumber": "SAM",
+					"validation-postcode": "SAM",
+					"validation-securityNumber": "SAM",
+					"validation-townCityLine1": "SAM",
+					"validation-townCityLine2": "SAM"
+				},
+				"main": {
+					"any": "Any (MaxSAM ",
+					"aria-lable": "Click to re-select the date and time you require.SAM",
+					"date-selected": "{dateselected}SAM",
+					"ticket": "ticketSAM"
+				},
+				"paymentMethod": {
+					"methodCreditDebit": "Credit/Debit cardSAM",
+					"methodCreditDebitAriaLabel": "Select Credit/Debit card as the payment method.SAM",
+					"methodPaypal": "PaypalSAM",
+					"methodPaypalAriaLabel": "Select PayPal as the payment method.SAM",
+					"paymentMethodLegend": "Choose a payment methodSAM"
+				},
+				"showInfo": {
+					"date-selected": "{dateselected}SAM",
+					"fee": "fee",
+					"location": "{location}",
+					"priceband": "{priceband}",
+					"showtitle": "{showtitle}SAM"
+				},
+				"terms": {
+					"formDataPaymentMethod-paypal": "Complete purchase via PaypalSAM",
+					"formDataPaymentMethod-standard": "Buy TicketsSAM",
+					"form_legend-GDPR": "GDPR QuestionsSAM"
+				},
+				"ticketInsurance": {
+					"form__information-text": "Our 'ticket reimbursement cover' with securemybooking.com provides you with a 'full reimbursement' if you cannot attend your performance due to:SAM",
+					"form__label form__label--price": "{title} This is the recommended option and has a cost of @:currency{price}SAM",
+					"form__legend": "Choose Ticket InsuranceSAM",
+					"form__price": "@:currency{price}",
+					"icon-list__item-LearnMore": "Learn moreSAM",
+					"icon-list__item-LearnMore-aria-label": "Learn more about ticket insurance.SAM",
+					"icon-list__item-accident": "Accident, injury or illnessSAM",
+					"icon-list__item-flood": "Flood, fire, adverse weather (snow, fog, frost or storm)SAM",
+					"icon-list__item-strikes": "Strikes, riots, civil commotion, martial lawSAM",
+					"icon-list__item-transitDelay": "Transit delaySAM"
+				}
+			}
+		},
+		"productCards": {
+			"productCard": {
+				"perAdult": " per adultSAM",
+				"product_card__price": "@:currency{price}",
+				"product_card__quantity-title": "How many would you like?SAM",
+				"quantity-decrement": "SAM",
+				"quantity-increment": "SAM"
+			},
+			"productCards": {
+				"loader": {
+					"title": "Loading extrasSAM"
+				}
+			}
+		},
+		"seatMap": {
+			"concessions": {
+				"priceband-price": "Seats at @:currency{seatPrice}",
+				"seat-price": "@:currency{seatPrice}",
+				"title": "ConcessionsSAM"
+			},
+			"seatMapModal": {
+				"intro-title": "Seat PlanSAM"
+			},
+			"seatMapOverview": {
+				"aria-label": "",
+				"next": "NextSAM",
+				"price-filters__title": "Selected SeatsSAM",
+				"selectASeat": "Select A Seat To ContinueSAM",
+				"selectBestSeats": "Let the system select the best seatsSAM",
+				"selectBestSeatsInArea": "Let the system select the best seats in {area}SAM",
+				"selectNumberSeats": "Select {number} More Seats to ContinueSAM",
+				"selected-seats__overview-title": "You've selectedSAM",
+				"selected-seats__remove_all-link": "Remove allSAM",
+				"selected-seats__seat-location": "Select a seatSAM",
+				"selected-seats__seat-price": "@:currency{price}",
+				"selected-seats__total-price": "@:currency{price}",
+				"selected-seats__total-title": "Total priceSAM",
+				"selected__seats-re-select-link": "Change amount of seats requiredSAM",
+				"selectedseat-info": "{seatinfo}SAM",
+				"selectedseat-location": "{seatlocation}SAM",
+				"selectedseat-number": "{seatnumber}SAM"
+			},
+			"seatSelection": {
+				"loader": {
+					"title": "Loading seat mapSAM"
+				}
+			}
+		},
+		"shared": {
+			"errorMessages": {
+				"errorMessages": {
+					"error-messages__title": "Something went wrong!SAM"
+				}
+			},
+			"header": {
+				"header": {
+					"header__timer-text": "Time remaining SAM"
+				}
+			},
+			"orderSummary": {
+				"modules": {
+					"addressDetails": {
+						"order-summary__extra-title": "Delivery AddressSAM"
+					},
+					"basketExtras": {
+						"order-summary__extra-quantity": "{quantity} X @:currency{price}"
+					},
+					"deliveryMethod": {
+						"order-summary__extra-quantity": "@:currency{price}"
+					},
+					"localExtras": {
+						"order-summary__extra-quantity": "{extraQuantity} x @:currency{price}"
+					},
+					"ticketInsurance": {
+						"order-summary__extra-quantity": "@:currency{price}"
+					},
+					"tickets": {
+						"aria-label": "Click to view the seating planSAM",
+						"fee-text": " feeSAM",
+						"order-summary__seat-plan": "Seating PlanSAM",
+						"order-summary__ticket-breakdown": "(@:currency{price} + @:currency{bookingFee} {fee})",
+						"order-summary__ticket-quantity": "{length} x @:currency{price}",
+						"order-summary__ticket-title": "{tickettitle}SAM",
+						"selected-seats__seat-location": "{seatlocation}SAM",
+						"selected-seats__seat-number": "{seatnumber}SAM"
+					}
+				},
+				"orderSummary": {
+					"next": "NextSAM",
+					"order-summary__intro-title": "Order SummarySAM",
+					"order-summary__total-price": "@:currency{basketTotal}",
+					"order-summary__total-title": "Total priceSAM"
+				}
+			},
+			"ticketOptions": {
+				"ticketOption": {
+					"ticket-selection__option-percentage": "SAM",
+					"ticket-selection__option-text": "SAM"
+				}
+			}
+		},
+		"ticketOptions": {
+			"ticketoption": {
+				"any": "AnySAM",
+				"numberTickets": "{ticketNumber} ticketsSAM"
+			}
+		}
+	},
+	"core": {
+		"helpers": {
+			"calendar": {
+				"calendar": {
+					"days": {
+						"Friday": {
+							"long": "FridaySAM",
+							"text": "FriSAM"
+						},
+						"Monday": {
+							"long": "MondaySAM",
+							"text": "MonSAM"
+						},
+						"Saturday": {
+							"long": "SaturdaySAM",
+							"text": "SatSAM"
+						},
+						"Sunday": {
+							"long": "SundaySAM",
+							"text": "SunSAM"
+						},
+						"Thursday": {
+							"long": "ThursdaySAM",
+							"text": "ThuSAM"
+						},
+						"Tuesday": {
+							"long": "TuesdaySAM",
+							"text": "TueSAM"
+						},
+						"Wednesday": {
+							"long": "WednesdaySAM",
+							"text": "WedSAM"
+						},
+						"currentday": "{currentday}SAM"
+					},
+					"months": {
+						"April": {
+							"short": "AprSAM",
+							"text": "AprilSAM"
+						},
+						"August": {
+							"short": "AugSAM",
+							"text": "AugustSAM"
+						},
+						"December": {
+							"short": "DecSAM",
+							"text": "DecemberSAM"
+						},
+						"February": {
+							"short": "FebSAM",
+							"text": "FebruarySAM"
+						},
+						"January": {
+							"short": "JanSAM",
+							"text": "JanuarySAM"
+						},
+						"July": {
+							"short": "JulSAM",
+							"text": "JulySAM"
+						},
+						"June": {
+							"short": "JunSAM",
+							"text": "JuneSAM"
+						},
+						"March": {
+							"short": "MarSAM",
+							"text": "MarchSAM"
+						},
+						"May": {
+							"short": "MaySAM",
+							"text": "MaySAM"
+						},
+						"November": {
+							"short": "NovSAM",
+							"text": "NovemberSAM"
+						},
+						"October": {
+							"short": "OctSAM",
+							"text": "OctoberSAM"
+						},
+						"September": {
+							"short": "SepSAM",
+							"text": "SeptemberSAM"
+						}
+					}
+				}
+			},
+			"createBlockContent": {
+				"from": "fromSAM",
+				"onSale": "On Sale SAM",
+				"soldOut": "Sold Out SAM",
+				"unavailable": "UnavailableSAM"
+			}
+		},
+		"objects": {
+			"SeatMapFilters": {
+				"price-filters__item-input": "@:currency{price}",
+				"price-filters__item-input-aria-label": "SAM",
+				"price-filters__item-label": "@:currency{price}"
+			},
+			"loading": {
+				"title": "Loading...SAM"
+			},
+			"phoneNumber": {
+				"error": "Invalid phone number {number}SAM"
+			},
+			"seatMap": {
+				"stageTitle": ""
+			},
+			"seatMapAreas": {
+				"area-selection__item-aria-label": "Filter Seat Map To Show ${title}SAM"
+			},
+			"seatMapToolTip": {
+				"actionBTN": {
+					"remove": "RemoveSAM",
+					"selectSeat": "Select This SeatSAM"
+				}
+			},
+			"vtSeatRules": {
+				"prohibitedNumberSeatsError": "The venue does not permit this selection because it would leave a prohibited number {number} of adjacent seats available.SAM"
+			}
+		}
+	},
+	"currency": "SAM£",
+	"errorMessages": {
+		"address": {
+			"address": {
+				"long": "Please enter a valid addressSAM",
+				"short": "AddressSAM"
+			},
+			"country": {
+				"long": "Please select a countrySAM",
+				"short": "CountrySAM"
+			},
+			"countyState": {
+				"long": "Please enter a valid County / StateSAM",
+				"short": "County / StateSAM"
+			},
+			"postcode": {
+				"long": "Please enter a valid postcodeSAM",
+				"short": "PostcodeSAM"
+			},
+			"townCity": {
+				"long": "Please enter a valid town / citySAM",
+				"short": "Town / CitySAM"
+			}
+		},
+		"billing": {
+			"addressLine1": "Billing - @:errorMessages.address.address.short Line 1SAM",
+			"addressLine2": "Billing - @:errorMessages.address.address.short Line 2SAM",
+			"country": "Billing - @:errorMessages.address.country.shortSAM",
+			"county": "Billing - @:errorMessages.address.countyState.shortSAM",
+			"postCode": "Billing - @:errorMessages.address.postcode.shortSAM",
+			"townCity": "Billing - @:errorMessages.address.townCity.shortSAM"
+		},
+		"delivery": {
+			"addressLine1": "Delivery - @:errorMessages.address.address.short Line 1SAM",
+			"addressLine2": "Delivery - @:errorMessages.address.address.short Line 2SAM",
+			"country": "Delivery - @:errorMessages.address.country.short SAM",
+			"county": "Delivery - @:errorMessages.address.countyState.short SAM",
+			"deliveryMethod": {
+				"long": "Please select a delivery methodSAM",
+				"short": "Delivery methodSAM"
+			},
+			"postCode": "Delivery - @:errorMessages.address.postcode.short SAM",
+			"townCity": "Delivery - @:errorMessages.address.townCity.shortSAM"
+		},
+		"deliveryAddress": {
+			"country": {
+				"long": "Delivery outside the UK is not supported",
+				"short": "Country"
+			}
+		},
+		"gdpr": {
+			"ageConsent": {
+				"long": "Please confirm your ageSAM",
+				"short": "Confirm ageSAM"
+			},
+			"allTermsAndConditions": "All terms &amp; conditions must be accepted.SAM",
+			"termsConditions": {
+				"long": "Please accept the terms and conditionsSAM",
+				"short": "Terms and conditionsSAM"
+			}
+		},
+		"insurance": {
+			"ticketInsurance": {
+				"long": "Please choose the cover of ticket insurance cover you desireSAM",
+				"short": "Ticket insuranceSAM"
+			}
+		},
+		"issues": {
+			"validation-highlight__text": "We've noticed something isn't quite right with the following:SAM",
+			"validation-highlight__title": "Please check your details are correctSAM"
+		},
+		"payment": {
+			"cardName": {
+				"long": "Please make sure you have entered a valid name for the credit card holderSAM",
+				"short": "Card NameSAM"
+			},
+			"cardNumber": {
+				"long": "Please make sure you've entered a valid card numberSAM",
+				"short": "Card numberSAM"
+			},
+			"expiryMonth": {
+				"long": "Please select a monthSAM",
+				"short": "Expiry monthSAM"
+			},
+			"expiryYear": {
+				"long": "Please select a yearSAM",
+				"short": "Expiry yearSAM"
+			},
+			"paymentMethod": {
+				"long": "Please choose a method of paymentSAM",
+				"short": "Payment methodSAM"
+			},
+			"securityCode": {
+				"long": "Please make sure you've entered 3 or 4 digitsSAM",
+				"short": "Security CodeSAM"
+			}
+		},
+		"user": {
+			"emailAddress": {
+				"long": "Please enter a valid email addressSAM",
+				"short": "Email addressSAM"
+			},
+			"emailAddressConfirmation": {
+				"long": "Email addresses must matchSAM",
+				"short": "Email address confirmationSAM"
+			},
+			"firstName": {
+				"long": "Please enter a valid first nameSAM",
+				"short": "First nameSAM"
+			},
+			"lastName": {
+				"long": "Please enter a valid last nameSAM",
+				"short": "Last nameSAM"
+			},
+			"phoneNumber": {
+				"long": "Please enter a valid phone numberSAM",
+				"short": "Phone numberSAM"
+			}
+		}
+	},
+	"modals": {
+		"basket": {
+			"basketChangeWarning": "Making changes to the date & time or seat amounts  will mean you need to select your seats again.SAM",
+			"dataaccept": "Make ChangesSAM",
+			"datadeny": "Keep my seatsSAM",
+			"usermessageinfotitle": "Please noteSAM"
+		},
+		"cookies": {
+			"cookiewarningtext": "We use cookies to ensure you get the best experience on our website.SAM",
+			"cookiewarningtitle": "This website uses cookiesSAM",
+			"data-accept": "ContinueSAM"
+		},
+		"session": {
+			"createsession": "Creating SessionSAM",
+			"sessionexpireddesc": "Sorry, your booking has expired.SAM",
+			"sessionexpireddescbutton": "Start againSAM",
+			"usermessageinfotitle": "Your session expiredSAM"
+		}
+	},
+	"object": {
+		"loading": {
+			"title": "Loading dates and timesSAM"
+		}
+	},
+	"others": {
+		"msg1": "dummymsg1",
+		"msg2": "dummymsg2",
+		"msg3": "dummymsg3",
+		"msg4": "dummymsg4",
+		"msg5": "dummymsg5"
+	},
+	"service": {
+		"modules": {
+			"api": {
+				"offerSeats": {
+					"erroroccured": "An error has occured in offering your seats.  Please refresh your browser and try again.",
+					"novalidoffer": "No valid offers were found."
+				},
+				"paypalClienToken": {
+					"generrormsg": "Failed to return valid paypal client tokenSAM"
+				},
+				"postCheckout": {
+					"errmsgpart1": "In processing your payment. Please contact support at SAM",
+					"errmsgpart2": "with your booking reference SAM"
+				},
+				"postCheckoutStage1": {
+					"errmsg": "In making your booking: SAM",
+					"errmsg2": ""
+				},
+				"postCheckoutStage2": {
+					"errmsgpart1": "In processing your payment. Please contact support at SAM",
+					"errmsgpart2": "with your booking reference SAM"
+				},
+				"postCheckoutThreeD": {
+					"errmsg": "In making your booking: SAM",
+					"errmsg2": ""
+				},
+				"savePatron": {
+					"errmsgpart1": "In processing your PayPal payment ( SAM",
+					"errmsgpart2": "). Please contact support at SAM",
+					"errmsgpart3": "with your booking referenceSAM"
+				},
+				"seatMapBestSeat": {
+					"errmsg": "The system failed to select the best seats... Please try again.SAM",
+					"errmsg2": ""
+				}
+			},
+			"service": {
+				"basket": {
+					"basketChangeWarning": "Making changes to the date & time or seat amounts  will mean you need to select your seats again.SAM",
+					"dataaccept": "Make ChangesSAM",
+					"datadeny": "Keep my seatsSAM",
+					"usermessageinfotitle": "Please noteSAM"
+				},
+				"checkout": {
+					"ExtrasPackages": "Extras PackagesSAM",
+					"Ticketsto": "Tickets toSAM",
+					"basketerrmsg": "Your basket is empty. Please go back to Choose date and timeSAM",
+					"generrormsg": "An error has occured: SAM",
+					"tdseccallbackerrmsg": "Processing 3D paymentSAM"
+				}
+			}
+		}
+	},
+	"views": {
+		"additionalExtras": {
+			"add-extras__intro-text": "Make your visit to {eventTitle} special. Take a look at our range of luxurious gifts, snacks, drinks and VIP experiences available at a great price. SAM",
+			"add-extras__intro-title": "Make your visit even more memorableSAM",
+			"add-extras__skip-btn": "No thanks, skip to checkoutSAM",
+			"add-extras__skip-btn-aria-label": "Not Interested in any extras? , Click to skip to the checkout.SAM",
+			"add-extras__skip-text": "Not interested in any extras?SAM",
+			"makeYourVisit": "Make your visit to SAM",
+			"special": " special.SAM",
+			"takeALook": " Take a look at our range of luxurious gifts, snacks, drinks and VIP experiences available at a great price.SAM"
+		},
+		"checkout": {
+			"checkout__intro-title": "Your BasketSAM",
+			"loader": {
+				"title": "Loading checkoutSAM"
+			},
+			"ordersummary__title": "Order SummarySAM"
+		},
+		"confirmation": {
+			"loader": {
+				"title": "Loading confirmationSAM"
+			},
+			"order-confirmation__btn": "ContinueSAM",
+			"order-confirmation__ref": "Order no # {orderNumber}SAM",
+			"order-confirmation__text": "Your order has been successful, we've sent you an email confirmation to the email you provided us.SAM",
+			"order-confirmation__title": "Thanks for your orderSAM"
+		},
+		"error": {
+			"404": "Page Not FoundSAM",
+			"error": "ErrorSAM",
+			"eventInfoInvalid": "Application Error: Event Info InvalidSAM",
+			"goToEvent": "Go To EventSAM"
+		},
+		"main": {
+			"additionalExtras__router-link": "Click to re-select any additional extras you require.SAM",
+			"additionalExtras__step-title": "Add ExtrasSAM",
+			"booking-app__step-edit": "Click to re-select the seats you require.SAM",
+			"booking-app__step-edit-extras": "Click to re-select any additional extras you require.SAM",
+			"booking-app__step-full-link": "Click to re-select the seats you require.SAM",
+			"booking-app__step-full-link-extras": "Click to re-select any additional extras you require.SAM",
+			"booking__app-title": "Number of ticketsSAM",
+			"checkout__step-title": "CheckoutSAM",
+			"extras_added": "Extras AddedSAM",
+			"no_extra_added": "No Extras AddedSAM",
+			"selectSeat-seats": "seatsSAM",
+			"selectSeat__step-title": "Select your seatSAM",
+			"showSelect__step-title": "Choose a date and timeSAM"
+		},
+		"seatSelection": {
+			"error-messages__title-max-seats-selected": "Select A Seat (upto a maximum of 10) To ContinueSAM",
+			"error-messages__title-other": "Select {seatsLeft} Seats to ContinueSAM",
+			"price-filters__key-item--disabled": "Disabled seatingSAM",
+			"price-filters__key-item--non-standard": "Non-standardSAM",
+			"price-filters__key-item--selected": "Selected Seat(s)SAM",
+			"price-filters__key-item--unavailable": "UnavailableSAM",
+			"price-filters__title": "Seat pricesSAM",
+			"seat-map__limit-reached-title": "Seat Selection Not PermittedSAM",
+			"seatsToContinue": " Seats to ContinueSAM",
+			"select": "Select SAM"
+		},
+		"ticketSelect": {
+			"showLessTickets": "Show less ticketsSAM",
+			"showMoreTickets": "Show more ticketsSAM",
+			"ticket-selection__load-more": "...SAM",
+			"ticket-selection__text": "We'll make sure to find you the correct number of consecutive seats and will only return performance dates/times with suitable availability.  Please note: this event is only suitable for people aged 5 and over.SAM",
+			"ticket-selection__title": "How many tickets are you looking for?SAM"
+		},
+		"wechat": {
+			"msg1": "dummymsg1",
+			"msg2": "dummymsg2",
+			"msg3": "dummymsg3",
+			"msg4": "dummymsg4",
+			"msg5": "dummymsg5"
+		}
+	}
+}

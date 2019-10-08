@@ -1,0 +1,97 @@
+/** 
+* Order Confirmation
+* Stylesa ssociated with the loading component
+*/
+
+/* Main Styles */
+.order-confirmation {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.order-confirmation__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-confirmation__information {
+    width: 100%;
+    display: block;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.order-confirmation__title {
+    @include h1();    
+}
+
+.order-confirmation__ref {
+    @include p();
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.order-confirmation__text {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.order-confirmation__actions {
+    margin-top: 30px;
+    display: table;
+}
+
+.order-confirmation__btn {
+    display: block;
+    width: auto;
+    text-decoration: none;
+}
+
+.order-confirmation__summary {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Media Queries */
+@include mq($from: screen768) {
+    .order-confirmation__information {
+        width: 50%;
+        padding: 0 40px 0 0;
+    }
+
+    .order-confirmation__summary {
+        width: 50%;
+        margin-top: 0;
+    }
+} 
+
+@include mq($from: screen1000) {
+    .order-confirmation {
+        padding: 40px 40px;
+    }
+
+    .order-confirmation__information {
+        width: calc(100% - 360px);
+        padding: 0 0;
+    }
+
+    .order-confirmation__summary {
+        width: 360px;
+    }
+    
+    .order-confirmation__text {    
+        max-width: 360px;
+    }
+}

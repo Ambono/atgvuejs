@@ -1,0 +1,120 @@
+/** 
+* Header
+* Styles associated with the header component.
+*/
+
+/* Main Styles */ 
+button {
+    padding: 15px;
+    border: 1px solid green;
+    font-size: 18px;
+    margin: 15px;
+}
+.header {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    box-shadow: 0 2px 5px 0 rgba($black, 0.5);
+}
+
+.header__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+	@include mq($from: screen768) {
+		flex-flow: row wrap;
+	}
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header__logo {
+	max-width: 160px;
+    height: auto;
+    display: inline-block;
+	@include mq($until: screen768) {
+		margin-right: 10px;
+	}
+	@include mq($from: screen768) {
+		margin-right: 40px;
+	}
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.header__logo-image {
+	@include mq($until: screen768) {
+		max-width: 110px;
+	}
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+
+.header__show-details {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.header__show-details-title {
+    @include h2(); 
+}
+
+.header__show-details-location {
+    @include small();
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.spacer__div{
+    width:300px;   
+ } 
+ 
+.header__timer {
+    margin-left: auto;
+    width: auto;
+    display: none;
+
+    &[data-active] {
+        display: block;
+    }
+}
+
+.header__lang{
+    margin-left: auto;
+    width: auto;
+    display: inline-block;
+}
+
+.header__timer-text {
+    width: auto;
+    text-align: right;
+    @include p();
+    font-weight: 500;
+    font-size: rem(14);
+    
+    span {
+        display: block;
+        color: $brandPrimary;
+        font-weight: bold;
+        font-size: rem(24);
+    }
+}
+
+/* Media Queries */ 
+@include mq($from: screen600) {
+    .header {
+        padding: 30px 40px;
+    }
+
+    .header__logo {
+        margin-bottom: 0;
+    }
+}
+
+@include mq($from: screen768) {
+    .header {
+        padding: 30px 60px;
+    }
+}

@@ -1,0 +1,165 @@
+/**
+*  Main SASS Variables
+*  Includes the project variables
+*/
+
+/*****************************************************************
+* Colors
+*****************************************************************/
+// Brand
+$brandPrimary: #D22231;
+$brandSecondary: #D22231;
+
+// Typography
+$textColor: #4A4A4A;
+$headingColor: #000000;
+
+// Generic
+$red: #D22231;
+$black: #000000;
+
+$grey1: #4A4A4A;
+$grey2: #CBCBCB;
+$grey3: #E7E7E7;
+$grey4: #FCFCFC;
+
+$disabled: #9B9B9B;
+
+// Base
+$white: #ffffff;
+$offWhite: #FCFCFC;
+
+// Availability
+$availabilityRed: #D63636;
+$availabilityOrange: #C9510D;
+$availabilityGreen: #2C8321;
+$availabilityGrey: #737373;
+
+// Link
+$linkColor: $red;
+$linkColorHover: $red;
+
+// Buttons
+$btnColor: $brandPrimary;
+$btnKeylineBackground: transparent;
+$btnKeylineTextColor: $brandPrimary;
+$btnKeylineBackgroundHover: $brandPrimary;
+$btnKeylineTextColorHover: $white;
+$btnKeylineBorderColor: $brandPrimary;
+
+// Borders 
+$inputBorder: 1px solid #9B9B9B;
+$inputBorderActive: 1px solid $red;
+$inputBorderDisabled: 1px solid $grey3;
+
+$fieldsetBorder: #9B9B9B;
+
+// Valid states
+$error: #D22231;
+
+/*****************************************************************
+* Typography
+*****************************************************************/
+// Fonts
+$bodyFont: "Proxima Nova", sans-serif;
+$headingFont: "Proxima Nova", sans-serif;
+
+// Settings
+$htmlFontSize: 16;
+$htmlFontSizeMedium: 14;
+$htmlFontSizeSmall: 12;
+$lineHeightRatio: 1.618;
+
+/*****************************************************************
+* Media Queries
+* Using SASS MQ: http://sass-mq.github.io/sass-mq/ 
+*****************************************************************/
+$mq-breakpoints: (
+    screen375: 375px,   // Slim phones
+    screen480: 480px,   // Small Phones
+    screen600: 600px,   // Large Phone
+    screen768: 768px,   // Tablet
+    screen1000: 1000px, // Large Tablet / Small Laptop
+    screen1200: 1200px, // Desktop
+    screen1400: 1400px  // Desktop Large
+);
+
+$breakPoints: (screen375, screen480, screen600, screen768, screen1000, screen1200, screen1400);
+
+/*****************************************************************
+* Components
+*****************************************************************/
+
+/* General */ 
+$containerMaxSize: 1481px;
+
+/* Modal */
+$modalOverlay: rgba(0,0,0,.9);
+$modalContainer: #ffffff;
+
+/* Product Card */
+$productCardBorder: 1px solid #E2E2E2;
+$productCardPrice: #2C8231;
+
+/* Order Summary */ 
+$orderSummary: 1px solid #E2E2E2;
+$orderSummarySeperator: #EDEDED;
+
+/* Price Filters */
+$priceFiltersBorderColor: #EDEDED;
+
+/* Area Selection */ 
+$areaSelectionBorderColor: #EDEDED;
+$areaSelectionActive: #F95E5E;
+$areaSelectionDisabled: #D6D6D6;
+$areaSelectionBoxShadow: inset 0 0 0 1px rgba(#000000, .2);
+
+/* Seat Map */ 
+$seatMapBorderColor: #EDEDED; 
+$seatBoxShadow: inset 0 0 0 1px rgba(#000000, .2);
+
+/* Seats - Colors */ 
+$seatRed: #EF5350;
+$seatOrange: #FFA726;
+$seatBlue: #42A5F5;
+$seatPink: #FCABC7;
+$seatLightBlue: #8FEBF7;
+$seatLightGreen: #55CC5B;
+$seatPurple: #AE87F2;
+$seatYellow: #EFDC32;
+$seatGreen: #018930;
+$seatUnavailableColor: #D6D6D6;
+
+/* 
+Create Key Value Pairs
+Key = Class extension (item--{key}).
+Value = The Colour to be used.
+*/
+$seatTypes: (
+    red: $seatRed,
+    orange: $seatOrange,
+    blue: $seatBlue, 
+    pink: $seatPink,
+    lightBlue: $seatLightBlue,
+    lightGreen: $seatLightGreen,
+    purple: $seatPurple,
+    yellow: $seatYellow,
+    green: $seatGreen
+);
+
+/* Seat Map Controls */ 
+$seatMapControlsFill: $black;
+
+/* Seat Map */ 
+$stageColor: #9B9B9B;
+
+/* Ticket Select */
+$ticketItemFillColor: $brandPrimary;
+
+/* Calendar */ 
+$calendarActiveDayTextColor: $brandPrimary;
+$showBlockTextColor: $brandPrimary;
+
+/* General */ 
+$editIconColor: $brandPrimary;
+$bookingStepBackgroundColor: #6DA5C7;

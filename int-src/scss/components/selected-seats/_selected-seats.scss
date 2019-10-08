@@ -1,0 +1,239 @@
+/* Main Styles */ 
+.selected-seats {
+    width: 100%;
+    display: block;
+    height: auto;
+    right: auto;
+}
+
+.selected-seats__container {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: $white;
+    border: $orderSummary;
+    border-radius: 2px;
+    padding: 20px 0;
+}
+
+.selected-seats__intro {
+    width: 100%;
+    height: auto;
+    display: block;    
+}
+
+/* Overview */ 
+.selected-seats__overview {
+    padding: 0 20px;
+}
+
+.selected-seats__overview-title {
+    @include p();
+}
+
+.selected-seats__overview-list {
+    padding: 0;
+    margin: 10px 0;
+}
+
+.selected-seats__seat,
+.selected-seats__placeholder {
+    display: flex;
+    margin: 0 0 10px 0;
+    width: 100%;
+    height: auto;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.selected-seats__seat-type {
+    width: 20px;
+    height: 20px;
+    background: $seatGreen;
+    border-radius: 100%;
+    opacity: 1;
+}
+
+.selected-seats__seat-location {
+    font-size: 14px;
+    min-width: 50px;
+    margin: 0 24px 0 10px;
+}
+
+.selected-seats__seat-information {
+    font-size: 14px;
+    min-width: 50px;
+    margin: 0 24px 0 10px;
+    text-overflow: ellipsis;
+}
+
+.selected-seats__seat-number {
+    font-size: 14px;
+}
+
+.selected-seats__seat-price {
+    margin-left: auto;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Seats */
+.selected-seats__seat {
+    width: 100%;
+    height: auto;
+}
+
+/* Remove Button */ 
+.selected-seats__remove-btn {
+    width: 30px;
+    height: 20px;
+    min-width: 0;
+    padding: 0;
+    background-color: transparent;
+
+    &:hover, &:focus {
+        .selected-seats__remove-btn-icon {
+            fill: $brandPrimary;
+        }
+    }
+}
+
+.selected-seats__remove-btn-icon {
+    width: 20px;
+    height: 20px;
+    fill: $textColor;
+    transition: 0.3s ease fill;
+}
+
+/* Total */ 
+.selected-seats__total {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.selected-seats__total-title {
+    @include p();
+    width: 50%;
+}
+
+.selected-seats__total-price {
+    width: 50%;
+    text-align: right;
+    font-weight: bold;
+}
+
+.selected-seats__btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Placeholder */ 
+.selected-seats__placeholder-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* reselect */ 
+.selected__seats-re-select {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px 20px 0 20px;
+    text-align: center;
+
+}
+
+.selected__seats-re-select-link {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* System */ 
+.selected-seats__system {
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.selected-seats__system-link {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove seats */
+.selected-seats__remove {
+    padding: 0 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+.selected-seats__remove_all-link {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Line Break */ 
+.selected-seats__separator {
+    border: none;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: $orderSummarySeperator;
+}
+
+/**
+* Seat Colours & Types
+* Adds colored styles to symbolise a seat type.
+*/ 
+.selected-seats__seat-type {
+    @each $key, $value in $seatTypes {
+        &.seat--#{$key} { 
+            background-color: $value;
+        }
+    }
+}
+
+#data {
+   
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#data:hover {
+    overflow: visible;
+    white-space: normal;
+    width: auto;
+}
+
+/* Media Queries */ 
+@include mq($from: screen1000) {
+    .selected-seats {
+        position: relative;
+        top: 0;
+    }
+
+    .selected-seats__intro {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .selected-seats__container  {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,73 @@
+/*****************************************************************
+* Extensions
+* Includes resets and frameworks
+*****************************************************************/
+@import 'base/normalize';
+@import 'base/mq';
+
+/*****************************************************************
+* Mixins / Functions
+* Includes helper functions
+*****************************************************************/
+@import 'mixins/rem/rem';
+@import 'mixins/line-height/line-height';
+@import 'mixins/set-font/set-font';
+
+/*****************************************************************
+* Settings
+* Includes variables and base app settings
+*****************************************************************/
+@import '_variables.scss';
+
+/*****************************************************************
+* Base
+* Includes base styles for the project
+*****************************************************************/
+@import 'base/html';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/helpers';
+
+/*****************************************************************
+* Layouts
+* Includes base styles for page layouts
+*****************************************************************/
+@import 'layouts/booking-app/booking-app';
+@import 'layouts/show-selection/show-selection';
+@import 'layouts/seat-selection/seat-selection';
+@import 'layouts/checkout/checkout';
+
+/*****************************************************************
+* Components
+* Includes styles for components
+*****************************************************************/
+/* General Elements */ 
+@import 'components/buttons/buttons';
+@import 'components/form/form';
+@import 'components/loading/loading';
+
+/* Shared Components */
+@import 'components/header/header';
+@import 'components/cookie-warning/cookie-warning';
+@import 'components/modal/modal';
+@import 'components/user-message/user-message';
+@import 'components/icon-list/icon-list';
+@import 'components/validation-highlight/validation-highlight';
+@import 'components/error-messages/error-messages';
+
+/* Components */ 
+@import 'components/ticket-selection/ticket-selection';
+@import 'components/calendar/calendar';
+@import 'components/show-block/show-block';
+@import 'components/add-extras/add-extras';
+@import 'components/order-summary/order-summary';
+@import 'components/product-cards/product-cards';
+@import 'components/order-confirmation/order-confirmations';
+@import 'components/area-selection/area-selection';
+@import 'components/price-filters/price-filters';
+@import 'components/seat-map/seat-map';
+@import 'components/tool-tip/tool-tip';
+@import 'components/selected-seats/selected-seats';
+@import 'components/concessions/concessions';
+@import 'components/seating-plan/seating-plan';
+@import 'components/paypal-overlay/paypal-overlay';

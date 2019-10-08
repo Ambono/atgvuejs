@@ -1,0 +1,98 @@
+/** 
+* Cookie Warning
+* Styles associated with the cookie-warning component
+*/
+
+/* Main Styles */ 
+.cookie-warning {
+    width: 100%;
+    height: auto;
+    background: $white;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    padding: 20px 40px;
+    display: block;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    
+    /* Initially set to hidden and off screen untill check is made */
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cookie-warning__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-warning__content {
+    display: block;
+    width: 100%;
+}
+
+.cookie-warning__title {
+    display: block;
+    width: 100%;
+}
+
+.cookie-warning__link {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.cookie-warning__text {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cookie-warning__toggles {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cookie-warning__toggles-link {
+    width: auto;
+    display: block;
+}
+
+.cookie-warning__toggles-button {
+    min-width: 100%;
+    order: -1;
+    margin-bottom: 15px;
+}
+
+/* Media Queries */ 
+@include mq($from: screen768) {
+
+    .cookie-warning__content {
+        width: calc(100% - 270px);
+    }
+
+    .cookie-warning__toggles {
+        width: 270px;
+    }
+
+    .cookie-warning__toggles-button {
+        min-width: 100px;
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .cookie-warning__toggles-link {
+        width: 150px;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,119 @@
+/** 
+* Tool Tip
+* Styles associated with the tool tip component
+*/
+
+/* Main Styles */
+.tool-tip {
+    width: auto;
+    height: auto;
+    min-width: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    z-index: 8;
+    display: none;
+    opacity : 0;
+
+    &:after {
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: calc(100% - 10px);
+        background: $white;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+}
+
+.tool-tip__close {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    min-width: 0;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+}
+
+.tool-tip__close-icon {
+    width: 14px;
+    height: 14px;
+    fill: $white;
+    display: block;
+    transform: rotate(45deg);
+}
+
+.tool-tip__container {
+    background-color: $white;
+    position: relative;
+    z-index: 9;
+}
+
+.tool-tip__image {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:after {
+        display: block;
+        content: "";
+        padding-top: 56.25%;
+    }
+}
+
+.tool-tip__content {
+    padding: 10px;
+
+}
+.tool-tip__info {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.tool-tip__seat {
+    width: 50%;
+    font-size: rem(14);
+    text-align: left;
+    
+    small {
+        display: block;
+        width: 100%;
+        font-size: rem(10);
+        color: #4A4A4A; 
+        text-overflow: ellipsis;
+    }
+}
+
+.tool-tip__price {
+    width: 50%;
+    font-size: rem(14);
+    text-align: right;
+
+    small {
+        display: block;
+        width: 100%;
+        font-size: rem(10);
+        color: #4A4A4A;
+        word-wrap: break-word;
+    }
+}
+
+.tool-tip__action-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tool-tip__action {
+    width: 100%;
+}

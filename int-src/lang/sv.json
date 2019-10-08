@@ -1,0 +1,653 @@
+{
+	"components": {
+		"calendar": {
+			"calendar": {
+				"data-carousel-next": "Växla områdeskarusell till nästa uppsättning resultat",
+				"data-carousel-prev": "Växla områdeskarusell till tidigare uppsättning resultat",
+				"loader": {
+					"title": "Laddar datum och tider"
+				}
+			}
+		},
+		"forms": {
+			"banner": {
+				"account": "My Account",
+				"basket": "Basket",
+				"browseAloud": "BrowseAloud",
+				"home": "Home",
+				"language": "Language",
+				"login": "Login"
+			},
+			"checkoutForm": {
+				"ThreeDseucre-overlay__text": "",
+				"buyTickets": "Köpa biljetter",
+				"loader": {
+					"title": "Behandlar betalning"
+				},
+				"paypal-overlay__text": "Fyll i stegen i PayPal-fönstret som är öppet för att fortsätta med processen.",
+				"paypal_account_tokenization_failed": "PayPal-tokenisering misslyckades. Se detaljer: {details}",
+				"paypal_default_error_message": "Det uppstod ett fel i att symbolisera PayPal! Meddelande: {message}",
+				"paypal_flow_failed": "Det går inte att initialisera PayPal-flödet. Är dina alternativ korrekta? {details}"
+			},
+			"modules": {
+				"billingAddress": {
+					"billingAddressLine1": "Adressrad 1 *",
+					"billingAddressLine2": "Adress Linje 2",
+					"billingCountry": "Land*",
+					"billingCountryErrror": "",
+					"billingCountyState": "Län",
+					"billingCountyStateError": "",
+					"billingPostCode": "Postnummer / Zip*",
+					"billingPostCodeError": "",
+					"billingTownCity": "Town / City *",
+					"billingTownCityError": "",
+					"formLegend": "Fakturaadress"
+				},
+				"billingDetails": {
+					"detailsEmailAddress": "E-postadress*",
+					"detailsEmailAddressConfirmationError": "",
+					"detailsEmailAddressError": "",
+					"detailsEmailAddressVerify": "Bekräfta e-postadress *",
+					"detailsFirstName": "Förnamn*",
+					"detailsFirstNameError": "",
+					"detailsLastName": "Efternamn*",
+					"detailsLastNameError": "",
+					"detailsPhoneNumber": "Telefonnummer*",
+					"detailsPhoneNumberError": "",
+					"yourDetails": "Dina detaljer"
+				},
+				"cardDetails": {
+					"cardExpiryMonth": "Månad:",
+					"cardExpiryYear": "År:",
+					"cardName": "Kortinnehavarens namn*",
+					"cardNumber": "Kortnummer*",
+					"expiryDate": "Utgångsdatum",
+					"legendCardDetails": "Kortdetaljer",
+					"securityCode": "Säkerhetskod*"
+				},
+				"delivery": {
+					"addressLine1": "Adressrad 1",
+					"addressLine2": "",
+					"addressLongError": "",
+					"chooseDeliveryAddress": "",
+					"chooseDeliveryAddressAriaLabel": "",
+					"copyAddress": "",
+					"country": "",
+					"county": "",
+					"deliveryAddress": "",
+					"deliveryAddressAriaLabel": "",
+					"postCode": "",
+					"price": "",
+					"townCity": ""
+				},
+				"errorMessages": {
+					"validation-addressLine1": "",
+					"validation-addressLine2": "",
+					"validation-cardName": "",
+					"validation-cardNumber": "",
+					"validation-country": "",
+					"validation-countyState": "",
+					"validation-emailAddress": "",
+					"validation-emailAddressConfirmation": "",
+					"validation-expiryMonth": "",
+					"validation-expiryYear": "",
+					"validation-firstName": "",
+					"validation-highlight__text": "",
+					"validation-hightlight__title": "",
+					"validation-lastName": "",
+					"validation-phoneNumber": "",
+					"validation-postcode": "",
+					"validation-securityNumber": "",
+					"validation-townCityLine1": "",
+					"validation-townCityLine2": ""
+				},
+				"main": {
+					"any": "några (Max ",
+					"aria-lable": "Click to re-select the date and time you require.",
+					"date-selected": "{dateselected}",
+					"ticket": "biljett"
+				},
+				"paymentMethod": {
+					"methodCreditDebit": "",
+					"methodCreditDebitAriaLabel": "",
+					"methodPaypal": "",
+					"methodPaypalAriaLabel": "",
+					"paymentMethodLegend": ""
+				},
+				"showInfo": {
+					"date-selected": "{dateselected}",
+					"fee": "fee",
+					"location": "{location}",
+					"priceband": "{priceband}",
+					"showtitle": "{showtitle}"
+				},
+				"terms": {
+					"formDataPaymentMethod-paypal": "",
+					"formDataPaymentMethod-standard": "",
+					"form_legend-GDPR": ""
+				},
+				"ticketInsurance": {
+					"form__information-text": "",
+					"form__label form__label--price": "",
+					"form__legend": "",
+					"form__price": "",
+					"icon-list__item-LearnMore": "",
+					"icon-list__item-LearnMore-aria-label": "",
+					"icon-list__item-accident": "",
+					"icon-list__item-flood": "",
+					"icon-list__item-strikes": "",
+					"icon-list__item-transitDelay": ""
+				}
+			}
+		},
+		"productCards": {
+			"productCard": {
+				"perAdult": "",
+				"product_card__price": "",
+				"product_card__quantity-title": "",
+				"quantity-decrement": "",
+				"quantity-increment": ""
+			},
+			"productCards": {
+				"loader": {
+					"title": ""
+				}
+			}
+		},
+		"seatMap": {
+			"concessions": {
+				"priceband-price": "",
+				"seat-price": "",
+				"title": ""
+			},
+			"seatMapModal": {
+				"intro-title": ""
+			},
+			"seatMapOverview": {
+				"aria-label": "",
+				"next": "",
+				"price-filters__title": "",
+				"selectASeat": "",
+				"selectBestSeats": "",
+				"selectBestSeatsInArea": "",
+				"selectNumberSeats": "",
+				"selected-seats__overview-title": "",
+				"selected-seats__remove_all-link": "",
+				"selected-seats__seat-location": "",
+				"selected-seats__seat-price": "",
+				"selected-seats__total-price": "",
+				"selected-seats__total-title": "",
+				"selected__seats-re-select-link": "",
+				"selectedseat-info": "",
+				"selectedseat-location": "",
+				"selectedseat-number": ""
+			},
+			"seatSelection": {
+				"loader": {
+					"title": "Loading seat map"
+				}
+			}
+		},
+		"shared": {
+			"errorMessages": {
+				"errorMessages": {
+					"error-messages__title": ""
+				}
+			},
+			"header": {
+				"header": {
+					"header__timer-text": ""
+				}
+			},
+			"orderSummary": {
+				"modules": {
+					"addressDetails": {
+						"order-summary__extra-title": ""
+					},
+					"basketExtras": {
+						"order-summary__extra-quantity": ""
+					},
+					"deliveryMethod": {
+						"order-summary__extra-quantity": ""
+					},
+					"localExtras": {
+						"order-summary__extra-quantity": ""
+					},
+					"ticketInsurance": {
+						"order-summary__extra-quantity": ""
+					},
+					"tickets": {
+						"aria-label": "Click to view the seating plan",
+						"fee-text": "",
+						"order-summary__seat-plan": "",
+						"order-summary__ticket-breakdown": "(@:currency{price} + @:currency{bookingFee} {fee})",
+						"order-summary__ticket-quantity": "{length} x @:currency{price}",
+						"order-summary__ticket-title": "{tickettitle}SW",
+						"selected-seats__seat-location": "{seatlocation}SW",
+						"selected-seats__seat-number": "{seatnumber}SW"
+					}
+				},
+				"orderSummary": {
+					"next": "",
+					"order-summary__intro-title": "",
+					"order-summary__total-price": "",
+					"order-summary__total-title": ""
+				}
+			},
+			"ticketOptions": {
+				"ticketOption": {
+					"ticket-selection__option-percentage": "",
+					"ticket-selection__option-text": ""
+				}
+			}
+		},
+		"ticketOptions": {
+			"ticketoption": {
+				"any": "några",
+				"numberTickets": "{ticketNumber} biljett"
+			}
+		}
+	},
+	"core": {
+		"helpers": {
+			"calendar": {
+				"calendar": {
+					"days": {
+						"Friday": {
+							"long": "fredag",
+							"text": "fre"
+						},
+						"Monday": {
+							"long": "måndag",
+							"text": "mån"
+						},
+						"Saturday": {
+							"long": "lördag",
+							"text": "lör"
+						},
+						"Sunday": {
+							"long": "söndag",
+							"text": "sön"
+						},
+						"Thursday": {
+							"long": "torsdag",
+							"text": "tor"
+						},
+						"Tuesday": {
+							"long": "tisdag",
+							"text": "tis"
+						},
+						"Wednesday": {
+							"long": "onsdag",
+							"text": "ons"
+						},
+						"currentday": "{currentday}"
+					},
+					"months": {
+						"April": {
+							"short": "apr",
+							"text": "april"
+						},
+						"August": {
+							"short": "aug",
+							"text": "augusti"
+						},
+						"December": {
+							"short": "dec",
+							"text": "december"
+						},
+						"February": {
+							"short": "feb",
+							"text": "februari"
+						},
+						"January": {
+							"short": "jan",
+							"text": "januari"
+						},
+						"July": {
+							"short": "jul",
+							"text": "juli"
+						},
+						"June": {
+							"short": "jun",
+							"text": "juni"
+						},
+						"March": {
+							"short": "mar",
+							"text": "mars"
+						},
+						"May": {
+							"short": "maj",
+							"text": "maj"
+						},
+						"November": {
+							"short": "nov",
+							"text": "november"
+						},
+						"October": {
+							"short": "okt",
+							"text": "oktober"
+						},
+						"September": {
+							"short": "sep",
+							"text": "september"
+						}
+					}
+				}
+			},
+			"createBlockContent": {
+				"from": "från",
+				"onSale": "On Sale",
+				"soldOut": "Sold Out",
+				"unavailable": "Inte tillgänglig"
+			}
+		},
+		"objects": {
+			"SeatMapFilters": {
+				"price-filters__item-input": "",
+				"price-filters__item-input-aria-label": "",
+				"price-filters__item-label": ""
+			},
+			"loading": {
+				"title": ""
+			},
+			"phoneNumber": {
+				"error": ""
+			},
+			"seatMap": {
+				"stageTitle": "Scen"
+			},
+			"seatMapAreas": {
+				"area-selection__item-aria-label": ""
+			},
+			"seatMapToolTip": {
+				"actionBTN": {
+					"remove": "",
+					"selectSeat": ""
+				}
+			},
+			"vtSeatRules": {
+				"prohibitedNumberSeatsError": ""
+			}
+		}
+	},
+	"currency": "kr",
+	"errorMessages": {
+		"address": {
+			"address": {
+				"long": "",
+				"short": ""
+			},
+			"country": {
+				"long": "",
+				"short": ""
+			},
+			"countyState": {
+				"long": "",
+				"short": ""
+			},
+			"postcode": {
+				"long": "",
+				"short": ""
+			},
+			"townCity": {
+				"long": "",
+				"short": ""
+			}
+		},
+		"billing": {
+			"addressLine1": "",
+			"addressLine2": "",
+			"country": "",
+			"county": "",
+			"postCode": "",
+			"townCity": ""
+		},
+		"delivery": {
+			"addressLine1": "",
+			"addressLine2": "",
+			"country": "",
+			"county": "",
+			"deliveryMethod": {
+				"long": "",
+				"short": ""
+			},
+			"postCode": "",
+			"townCity": ""
+		},
+		"deliveryAddress": {
+			"country": {
+				"long": "Delivery outside the UK is not supported",
+				"short": "Country"
+			}
+		},
+		"gdpr": {
+			"ageConsent": {
+				"long": "",
+				"short": ""
+			},
+			"allTermsAndConditions": "",
+			"termsConditions": {
+				"long": "",
+				"short": ""
+			}
+		},
+		"insurance": {
+			"ticketInsurance": {
+				"long": "",
+				"short": ""
+			}
+		},
+		"issues": {
+			"validation-highlight__text": "",
+			"validation-highlight__title": ""
+		},
+		"payment": {
+			"cardName": {
+				"long": "",
+				"short": ""
+			},
+			"cardNumber": {
+				"long": "",
+				"short": ""
+			},
+			"expiryMonth": {
+				"long": "",
+				"short": ""
+			},
+			"expiryYear": {
+				"long": "",
+				"short": ""
+			},
+			"paymentMethod": {
+				"long": "",
+				"short": ""
+			},
+			"securityCode": {
+				"long": "",
+				"short": ""
+			}
+		},
+		"user": {
+			"emailAddress": {
+				"long": "",
+				"short": ""
+			},
+			"emailAddressConfirmation": {
+				"long": "",
+				"short": ""
+			},
+			"firstName": {
+				"long": "",
+				"short": ""
+			},
+			"lastName": {
+				"long": "",
+				"short": ""
+			},
+			"phoneNumber": {
+				"long": "",
+				"short": ""
+			}
+		}
+	},
+	"modals": {
+		"basket": {
+			"basketChangeWarning": "Making changes to the date & time or seat amounts  will mean you need to select your seats again.",
+			"dataaccept": "Make Changes",
+			"datadeny": "Keep my seats",
+			"usermessageinfotitle": "Please note"
+		},
+		"cookies": {
+			"cookiewarningtext": "We use cookies to ensure you get the best experience on our website.",
+			"cookiewarningtitle": "This website uses cookies",
+			"data-accept": "Continue"
+		},
+		"session": {
+			"createsession": "Creating Session",
+			"sessionexpireddesc": "Sorry, your booking has expired.",
+			"sessionexpireddescbutton": "Start again",
+			"usermessageinfotitle": "Your session expired"
+		}
+	},
+	"object": {
+		"loading": {
+			"title": "Loading dates and times"
+		}
+	},
+	"others": {
+		"msg1": "dummymsg1",
+		"msg2": "dummymsg2",
+		"msg3": "dummymsg3",
+		"msg4": "dummymsg4",
+		"msg5": "dummymsg5"
+	},
+	"service": {
+		"modules": {
+			"api": {
+				"offerSeats": {
+					"erroroccured": "An error has occured in offering your seats.  Please refresh your browser and try again.",
+					"novalidoffer": "No valid offers were found."
+				},
+				"paypalClienToken": {
+					"generrormsg": "Failed to return valid paypal client tokenSAM"
+				},
+				"postCheckout": {
+					"errmsgpart1": "In processing your payment. Please contact support at SAM",
+					"errmsgpart2": "with your booking reference SAM"
+				},
+				"postCheckoutStage1": {
+					"errmsg": "In making your booking: SAM",
+					"errmsg2": ""
+				},
+				"postCheckoutStage2": {
+					"errmsgpart1": "In processing your payment. Please contact support at SAM",
+					"errmsgpart2": "with your booking reference SAM"
+				},
+				"postCheckoutThreeD": {
+					"errmsg": "In making your booking: SAM",
+					"errmsg2": ""
+				},
+				"savePatron": {
+					"errmsgpart1": "In processing your PayPal payment ( SAM",
+					"errmsgpart2": "). Please contact support at SAM",
+					"errmsgpart3": "with your booking referenceSAM"
+				},
+				"seatMapBestSeat": {
+					"errmsg": "The system failed to select the best seats... Please try again.",
+					"errmsg2": ""
+				}
+			},
+			"service": {
+				"basket": {
+					"basketChangeWarning": "Making changes to the date & time or seat amounts  will mean you need to select your seats again.",
+					"dataaccept": "Make Changes",
+					"datadeny": "Keep my seats",
+					"usermessageinfotitle": "Please note"
+				},
+				"checkout": {
+					"ExtrasPackages": "Extras Packages",
+					"Ticketsto": "Tickets to",
+					"basketerrmsg": "Your basket is empty. Please go back to Choose date and time",
+					"generrormsg": "An error has occured: ",
+					"tdseccallbackerrmsg": "Processing 3D payment"
+				}
+			}
+		}
+	},
+	"views": {
+		"additionalExtras": {
+			"add-extras__intro-text": "",
+			"add-extras__intro-title": "",
+			"add-extras__skip-btn": "",
+			"add-extras__skip-btn-aria-label": "",
+			"add-extras__skip-text": "",
+			"makeYourVisit": "",
+			"special": "",
+			"takeALook": ""
+		},
+		"checkout": {
+			"checkout__intro-title": "",
+			"loader": {
+				"title": ""
+			},
+			"ordersummary__title": ""
+		},
+		"confirmation": {
+			"loader": {
+				"title": ""
+			},
+			"order-confirmation__btn": "",
+			"order-confirmation__ref": "",
+			"order-confirmation__text": "",
+			"order-confirmation__title": ""
+		},
+		"error": {
+			"404": "",
+			"error": "",
+			"eventInfoInvalid": "",
+			"goToEvent": ""
+		},
+		"main": {
+			"additionalExtras__router-link": "",
+			"additionalExtras__step-title": "tillägga dubblett",
+			"booking-app__step-edit": "",
+			"booking-app__step-edit-extras": "",
+			"booking-app__step-full-link": "",
+			"booking-app__step-full-link-extras": "",
+			"booking__app-title": "antal i biljett",
+			"checkout__step-title": "kassa",
+			"extras_added": "",
+			"no_extra_added": "",
+			"selectSeat-seats": "",
+			"selectSeat__step-title": "utvald er plats",
+			"showSelect__step-title": "välja en datum och tid "
+		},
+		"seatSelection": {
+			"error-messages__title-max-seats-selected": "",
+			"error-messages__title-other": "",
+			"price-filters__key-item--disabled": "",
+			"price-filters__key-item--non-standard": "",
+			"price-filters__key-item--selected": "",
+			"price-filters__key-item--unavailable": "",
+			"price-filters__title": "",
+			"seat-map__limit-reached-title": "",
+			"seatsToContinue": "",
+			"select": ""
+		},
+		"ticketSelect": {
+			"showLessTickets": "",
+			"showMoreTickets": "",
+			"ticket-selection__load-more": "",
+			"ticket-selection__text": "",
+			"ticket-selection__title": ""
+		},
+		"wechat": {
+			"msg1": "dummymsg1",
+			"msg2": "dummymsg2",
+			"msg3": "dummymsg3",
+			"msg4": "dummymsg4",
+			"msg5": "dummymsg5"
+		}
+	}
+}

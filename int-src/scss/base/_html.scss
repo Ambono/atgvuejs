@@ -1,0 +1,55 @@
+/**
+*  HTML specific styles
+*  Styles to be used on html and body tags.
+*/
+
+/* Base Styles */
+* {
+    box-sizing: inherit;
+}
+  
+html{
+    box-sizing: border-box;
+	background: $white;
+	font-size: ($htmlFontSize * 1px);
+    -webkit-font-smothing: antialiased;
+    height: auto;
+}
+  
+body{
+    font-family: $bodyFont;
+    font-size: 100%;
+    color: $textColor;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  
+    /* Add Content property to define breakpoints */
+    /* Base Breakpoint */
+    &:after {
+      content: "screen0";
+      width: 0;
+      height: 0;
+      font-size: 0;
+      position: absolute;
+      left: 0;
+      top:0;
+    }
+  
+    /* Defined Break Points */
+    @each $breakPoint in $breakPoints {
+        @include mq($from: $breakPoint) {
+          &:after {
+            content: "#{$breakPoint}";
+          }
+        }
+    }
+  
+  }
+  
+.main {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}

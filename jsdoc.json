@@ -1,0 +1,38 @@
+{
+    "tags": {
+      "allowUnknownTags": true,
+      "dictionaries": [
+        "jsdoc"
+      ]
+    },
+    "source": {
+      "include": [
+        "package.json",
+        "int-src/docs/jsdocs/introduction.md"
+      ],
+      "includePattern": ".js$",
+      "excludePattern": "(node_modules/|docs)"
+    },
+    "plugins": [
+      "plugins/markdown"
+    ],
+    "templates": {
+      "title": "Documentation",
+      "name": "Documentation",
+      "cleverLinks": false,
+      "monospaceLinks": false,
+      "dateFormat": "ddd MMM Do YYYY",
+      "outputSourceFiles": true,
+      "outputSourcePath": true,
+      "linenums": true,
+      "collapseSymbols": false
+    },
+    "opts": {
+      "destination": "./int-dist/docs/",
+      "encoding": "utf8",
+      "private": true,
+      "recurse": true,
+      "template": "./node_modules/postman-jsdoc-theme",
+      "lenient": true
+    }
+  }

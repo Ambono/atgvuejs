@@ -1,0 +1,140 @@
+/** 
+* Area Selection
+* Styles associated with the area selection component.
+*/
+
+/* Main Styles */ 
+
+.area-selection {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top: 1px solid $areaSelectionBorderColor;
+    border-right: 1px solid $areaSelectionBorderColor;
+    border-left: 1px solid $areaSelectionBorderColor;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+.area-selection__list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.area-selection__item {
+    width: 25%;
+    padding: 15px 20px;
+    margin: 0;
+    height: auto;
+    display: block;
+    border-right: 1px solid $areaSelectionBorderColor;
+    border-bottom: 1px solid $areaSelectionBorderColor;
+    transition: 0.3s ease background-color;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:hover {
+        background-color: $white;
+    }
+}
+
+.area-selection__item-link {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    transition: 0.3s ease background-color;
+
+    &:focus { 
+        background-color: $white;
+    }
+}
+
+.area-selection__item-title {
+    text-align: center;
+    @extend p;
+    margin-bottom: 20px;
+    width: 100%;
+    transition: 0.3s ease font-weight, 0.3s ease color;
+
+    span {
+        display: block;
+    }
+}
+
+.area-selection__item-icon {
+    display: block;
+    width: 100px;
+    height: auto;
+    fill: $areaSelectionActive;
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* Attribute Changes */
+.area-selection__item[data-active] {
+    background-color: $white;
+    border-bottom: none;
+
+    .area-selection__item-title {
+        color: $linkColor;
+        font-weight: 600;
+    }
+}
+
+/* Modifiers */
+/**
+* Area Icons
+* Styles to adjust the size of each area svg.
+*/ 
+.area-selection__item--all {
+    .area-selection__item-icon {
+        width: 75px;
+        height: 60px;
+    }
+}
+
+.area-selection__item--sta {
+    .area-selection__item-icon {
+        width: 104px;
+        height: 51px;
+    }
+}
+
+.area-selection__item--roy {
+    .area-selection__item-icon {
+        width: 130px;
+        height: 34px;
+    }
+}
+
+.area-selection__item--gra {
+    .area-selection__item-icon {
+        width: 124px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 400px) { /* Change this to 400px, 800px for demo purpose */
+
+    .area-selection__item-icon {
+        display: none;
+        
+    }
+
+    .area-selection__item {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}

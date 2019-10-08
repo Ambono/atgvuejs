@@ -1,0 +1,14 @@
+/** 
+* Show Selection Layout
+* Adds base layout styles for the show selection page
+*/
+
+/* Main Styles */ 
+.show-selection {
+    display: block;
+    width: 100%;
+    max-width: $containerMaxSize;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}

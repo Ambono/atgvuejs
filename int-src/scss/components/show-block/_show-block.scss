@@ -1,0 +1,174 @@
+/** 
+* Show Block
+* Styles associated with the show block component.
+* This component is used within the calendar.
+*/
+
+/* Main Styles */ 
+.show-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.show-block__item {
+    width: calc(50% - 10px);
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border: 1px $grey2 solid;
+    padding: 10px 20px 10px 10px;
+    position: relative;
+    background-color: $offWhite;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.show-block__item-link {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: $grey1;
+}
+
+.show-block__item-text {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: $showBlockTextColor;
+
+    strong {
+        width: 100%;
+    }
+
+    span {
+        color: $textColor;
+    }
+    
+    &:focus, &:hover {
+        color: $linkColor;
+        .show-block__item-arrow {
+            fill: $linkColor;
+        }
+    }
+}
+
+.show-block__item-arrow {
+    width: 15px; 
+    height: 14px;
+    transition: fill 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.show-block__item-percentage {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+.show-block__item-percentage-icon {
+    width: 20px; 
+    height: 20px;
+    display: block;
+    margin-right: 2px;
+    margin-top: -3px;
+}
+
+
+/* Modifiers */ 
+/**
+* Availability Percentage Colours
+* Adjusts colours based on percentage numbers
+*/
+.show-block__item-percentage--green {
+    color: $availabilityGreen;
+
+    .show-block__item-percentage-icon {
+        fill: $availabilityGreen;
+    }
+}
+
+.show-block__item-percentage--red {
+    color: $availabilityRed;
+
+    .show-block__item-percentage-icon {
+        fill: $availabilityRed;
+    }
+}
+
+.show-block__item-percentage--orange {
+    color: $availabilityOrange;
+
+    .show-block__item-percentage-icon {
+        fill: $availabilityOrange;
+    }
+}
+
+.show-block__item-percentage--grey {
+    color: $availabilityGrey;
+
+    .show-block__item-percentage-icon {
+        fill: $availabilityGrey;
+    }
+}
+
+/**
+* Sold Out
+* Adjusts the styles to show a sold out state
+*/ 
+.show-block__item--sold-out {
+    /* Prevent the user from clicking the item */
+    pointer-events: none;
+    opacity: 0.5;
+
+    .show-block__item-text {
+        color: $availabilityGrey;
+    }
+}
+
+/* Media Queries */
+@include mq($from: screen375) {
+    .show-block__item {
+        margin-top: 0;
+        width: calc(50% - 10px);
+    }
+}
+
+@include mq($from: screen768) {
+    .show-block {
+        align-items: flex-end;
+    }
+
+    .show-block__item {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-right: 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

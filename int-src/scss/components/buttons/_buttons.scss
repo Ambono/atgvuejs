@@ -1,0 +1,60 @@
+/** 
+* Buttons
+* Used to add base properties to button elements.
+*/
+
+/* Main Styles */ 
+button, .btn {
+    @include set-font($headingFont, 14, 20, $white, 700);
+    display: block;
+    border-style: none;
+    background-color: $btnColor;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+    min-width: 100px;
+    cursor: pointer;
+    text-align: center;
+
+    &[disabled] {
+        background-color: $disabled;
+    }
+}
+
+/* Cases */
+/**
+* Button style used on an anchor tag.
+* Used to add additional changes to the button element.
+*/
+a.btn {
+    text-decoration: none;
+    color: $white;
+
+    &:hover, &:focus {
+        color: $white;
+    }
+}
+
+/* Modifiers */ 
+/**
+* Round
+* Applies a round style to the button component
+*/
+.btn--round {
+    border-radius: 80%;
+}
+
+/** 
+* Keyline
+* Applies a keyline style to the button component
+*/ 
+.btn--keyline {
+    background-color: $btnKeylineBackground;
+    color: $btnKeylineTextColor;
+    border: 2px solid $btnKeylineBorderColor;
+    transition: 0.3s background-color ease, 0.3s color ease;
+
+    &:focus, &:hover {
+        background-color: $btnKeylineBackgroundHover;
+        color: $btnKeylineTextColorHover;
+    }
+}

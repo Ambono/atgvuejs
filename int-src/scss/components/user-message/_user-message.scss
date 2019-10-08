@@ -1,0 +1,116 @@
+/** 
+* User Message
+* Styles associated with the user message component
+*/
+
+/* Main Styles */
+.user-message {
+    width: 100%;
+    min-width: 100px;
+    max-width: 600px;
+    height: auto;
+    padding: 20px 20px;
+    display: none;
+}
+
+.user-message__content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-message__icon {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.user-message__icon-icon {
+    width: 100px;
+    height: 100px;
+    fill: $grey2;
+}
+
+.user-message__info {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.user-message__info-title {
+    font-weight: bold;
+}
+
+.user-message__info-text {
+    margin-top: 10px;
+}
+
+.user-message__btn-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+    .btn {
+        width: 100%;
+        margin-top: 0;
+
+        &:nth-child(2) {
+            margin-top: 20px;
+        }
+    }
+}
+
+/* Modifiers */
+/**
+*   Modal
+*   Adjusts content when placed within a modal
+*/
+[data-modal] {
+    .user-message {
+        display: block;
+    }
+}
+
+/* Media Queries */
+@include mq($from: screen768) {
+    .user-message {
+        width: 100%;
+        min-width: 100px;
+        max-width: 600px;
+        padding: 50px 40px;
+    }
+
+    .user-message__icon {
+
+    }
+    
+    .user-message__icon-icon {
+        width: 100px;
+        height: 100px;
+        fill: $grey2;
+    }
+    
+    .user-message__info {
+        width: calc(100% - 140px);
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    .user-message__btn-container {
+        justify-content: flex-start;
+
+        .btn {
+            width: auto;
+            &:nth-child(2) {
+                margin-top: 0;
+                margin-left: 20px
+            }
+        }
+    }
+}

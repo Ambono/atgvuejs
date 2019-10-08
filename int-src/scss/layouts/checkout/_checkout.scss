@@ -1,0 +1,146 @@
+/** 
+* Checkout Layout
+* Adds base layout styles for the checkout page
+*/
+
+/* Main Styles */ 
+.checkout {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: $containerMaxSize;
+    margin: 0 auto;
+}
+
+.checkout__intro {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.checkout__intro-title {
+    @include h1();
+}
+
+.checkout__container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.checkout__payment-details {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 30px; 
+}
+
+.checkout__summary {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    order: -1;
+}
+
+.ordersummary__link {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.ordersummary__title {
+    text-align: center;
+   
+}
+
+.iframescroll__box {
+    background:#e6e6e6;
+    // width:70%;
+    // height: 70%;
+    // padding:10px;
+    width:100%;
+        height: 100%;
+        padding:15px;
+    overflow-y: scroll
+}
+
+ThreeDseucre-overlay__text {
+  
+    @include h1();
+    // max-width: 740px;
+    // width: 100%;
+    // height: auto;
+    // display: block;
+    // margin-top: 20px;
+
+}
+
+
+
+.modal1 {
+    width: auto;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 3px;
+    transition: all 0.2s ease-in;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+  .fadeIn-enter {
+    opacity: 0;
+  }
+  
+  .fadeIn-leave-active {
+    opacity: 0;
+    transition: all 0.2s step-end;
+  }
+  
+  .fadeIn-enter .modal1,
+  .fadeIn-leave-active.modal1 {
+    transform: scale(1.1);
+  }
+  button {
+    padding: 7px;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #00000094;
+    z-index: 999;
+    transition: opacity 0.2s ease;
+  }
+
+/* Media Queries */ 
+@include mq($from: screen1000) {
+    .checkout__payment-details {
+        width: 60%;
+        padding-right: 40px;
+        margin-top: 0;
+    }
+
+    .checkout__summary {
+        width: 40%;
+        order: 0;
+        margin-top: -20px;
+    }
+}

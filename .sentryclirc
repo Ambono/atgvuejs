@@ -1,0 +1,7 @@
+[defaults]
+url = https://sentry.io/
+org = vivaticket-ticketing-ltd
+project = c
+
+[auth]
+token = 5d608c0d4f4f41e4abed2e632533e3050154a4bc65df454985550c67ce666289

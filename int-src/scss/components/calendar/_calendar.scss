@@ -1,0 +1,332 @@
+/**
+* Calendar
+* Styles associated with the calendar component
+*/
+
+/* Main Styles */
+.calendar {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-height: 500px;
+    opacity: 0;
+    background: $white;
+}
+
+/* Range Carousel */
+.calendar__range {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px $grey2 solid;
+    border-left: 1px $grey2 solid;
+    border-right: 1px $grey2 solid;
+    position: relative;
+}
+
+.calendar__range-list {
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.calendar__range-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-right: 1px $grey2 solid;
+}
+
+.calendar__range-anchor {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    color: $grey1;
+    font-weight:400;
+}
+
+.calendar__range-title {
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+}
+
+.calendar__range-price {
+    width: 100%;
+    display: block;
+}
+
+.calendar__range-arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    pointer-events: none;
+}
+
+.calendar__range-arrows-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    background-color: $grey3;
+    pointer-events: all;
+    z-index: 0;
+
+    &[data-carousel-next] {
+        margin-left: auto;
+    }
+}
+
+.calendar__range-arrows-item-icon {
+    width: 20px;
+    height: 20px;
+    $fill: $grey1;
+    display: flex;
+    margin: 0 auto;
+}
+
+/* Days Key */
+.calendar__days {
+    width: 100%;
+    height: auto;
+    display: none;
+    overflow: hidden;
+}
+
+.calendar__days-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.calendar__days-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: calc(100% / 7);
+    margin: 0;
+}
+
+.calendar__days-title {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* Calendar Blocks */
+.calendar__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-left: 1px $grey2 solid;
+    border-bottom: 1px solid $grey2;
+}
+
+.calendar__block {
+    width: 100%;
+    height: auto;
+    border-right: 1px solid $grey2;
+    border-top: 1px solid $grey2;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.calendar__block-top {
+    width: 40px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    // align-self: flex-start;
+    align-items: center;
+}
+
+.calendar__block-day {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.calendar__block-weekday {
+    display: block;
+    width: 40px;
+    color: $linkColor;
+    text-align: center;
+}
+
+.calendar__block-content {
+    width: calc(100% - 45px);
+    margin-left: 0;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Attribute Modifiers */
+/**
+* Range Active
+* Applies an active styling to the selected calendar month.
+*/
+.calendar__range-item[data-active] {
+    .calendar__range-anchor {
+        color: $calendarActiveDayTextColor;
+        font-weight: bold;
+    }
+}
+
+/* Modifiers */
+/**
+* Today
+* Styles to modifiy calendar block to identify current date
+*/
+.calendar__block--today {
+    .calendar__block-day {
+        border-radius: 100%;
+        background-color: $grey2;
+    }
+}
+
+/**
+* Previous Month
+* Styles to modify the calendar to identify the previous month
+**/
+.calendar__block--prev {
+    display: none;
+    opacity: 0.65;
+    transition: 0.3s ease opacity;
+
+    &:hover {
+        .calendar__block-top,
+        .calendar__block-content {
+            opacity: 1;
+        }
+    }
+
+    .calendar__block-top,
+    .calendar__block-content {
+        opacity: 0.65;
+    }
+}
+
+/**
+* Next Month
+* Styles to modify the calendar to identify the next month
+**/
+.calendar__block--next {
+    display: none;
+
+    &:hover {
+        .calendar__block-top,
+        .calendar__block-content {
+            opacity: 1;
+        }
+    }
+
+    .calendar__block-top,
+    .calendar__block-content {
+        opacity: 0.65;
+    }
+}
+
+/**
+* No Events
+* Styles to modify the calendar to indentify dates with no events
+**/
+.calendar__block--no-events {
+    display: none;
+
+    &:hover {
+        .calendar__block-top,
+        .calendar__block-content {
+            opacity: 0.35;
+        }
+    }
+
+    .calendar__block-top,
+    .calendar__block-content {
+        opacity: 0.35;
+    }
+}
+
+/* Media Queries */
+@include mq($from: screen768) {
+
+    .calendar__container {
+        border-bottom: 0;
+    }
+
+    .calendar__days {
+        display: block;
+    }
+
+    .calendar__block {
+        width: calc((100% / 7) - 0.1px);
+        padding: 10px;
+    }
+
+    .calendar__block-top {
+        width: 100%;
+        align-self: flex-start;
+        justify-content: flex-start;
+    }
+
+    .calendar__block-content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .calendar__block-day {
+        margin: 0;
+    }
+
+    .calendar__block--no-events,
+    .calendar__block--next,
+    .calendar__block--prev {
+        display: flex;
+    }
+
+    .calendar__block-weekday {
+        display: none;
+    }
+
+    .calendar__block {
+        align-items: flex-end;
+        min-height: 200px;
+    }
+}

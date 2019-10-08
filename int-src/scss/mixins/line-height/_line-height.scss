@@ -1,0 +1,8 @@
+/**
+*  Line Height Calculator
+*  Set Appropriate Line Height Relevant To Calculated Font Size
+*/
+@function lineheight($value){
+    @return (($value / $htmlFontSize) * $lineHeightRatio) * 1rem;
+}
+  

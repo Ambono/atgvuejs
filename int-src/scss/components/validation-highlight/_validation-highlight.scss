@@ -1,0 +1,69 @@
+/** 
+* Validation Highlight
+* Styles associated with the validation highlight component
+*/
+
+/* Main Styles */ 
+.validation-highlight {
+    width: 100%;
+    height: auto;
+    background: $white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.validation-highlight__warning {
+    width: 100px;
+    height: auto;
+    background-color: $error;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.validation-highlight__warning-icon {
+    width:48px;
+    height: 48px;
+    display: block;
+    fill: $white;
+}
+
+.validation-highlight__issues {
+    width: calc(100% - 100px);
+    padding: 30px;
+}
+
+.validation-highlight__intro {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.validation-highlight__title {
+    @include h4();
+    width: 100%;
+} 
+
+.validation-highlight__text {
+    @include p();
+    margin-top: 10px;
+}
+
+.validation-highlight__issues-list {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.validation-highlight__issues-item {
+    @include p();
+    margin: 10px 0;
+}

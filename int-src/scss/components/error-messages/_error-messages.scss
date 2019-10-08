@@ -1,0 +1,23 @@
+/**
+* Error Messages
+*/ 
+.error-messages {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 12px 0 24px 0;
+}
+
+.error-messages__title {
+    @include h4();
+    color: $error;
+    margin-bottom: 0;
+}
+
+.error-messages__list {
+    margin: 20px 0 0 0;
+}
+
+.error-messages__list-item {
+    margin: 5px 0;
+}

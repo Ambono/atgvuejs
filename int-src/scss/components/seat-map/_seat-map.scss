@@ -1,0 +1,192 @@
+/** 
+* Seat Map
+* Styles associated with the seat map component.
+*/
+
+/* Main Styles */ 
+
+.seat-map {
+    width: 100%;
+    height: auto;
+    background: $white;
+    border-left: 1px solid $seatMapBorderColor;
+    border-right: 1px solid $seatMapBorderColor;
+    border-bottom: 1px solid $seatMapBorderColor;
+    // padding: 20px;
+    position: relative;
+
+    circle {
+        pointer-events: auto;
+    }
+
+    [data-selected-icon] {
+        pointer-events: none;
+    }
+}
+
+/* Controls */
+.seat-map__controls {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 5;
+}
+
+.seat-map__controls-btn {
+    min-width: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin: 5px 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+}
+
+
+
+.seat-map__controls-btn-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: $seatMapControlsFill;
+}
+
+/* Container */ 
+.seat-map__container {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    // padding: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.seat {
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 100%;
+    position: relative;
+}
+
+/* Map */ 
+.seat-map__map {
+    background: $white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.seat-map__map-section-title {
+    @include p();
+    font-size: 1.5em;
+    color: $brandPrimary;
+    fill: $brandPrimary;
+    margin: 0;
+}
+
+.seat-map__map-stage {
+    fill: $stageColor;
+}
+
+.seat-map__map-stage-title {
+    @include p();
+    font-size: 1.5em;
+    color: $white;
+    fill: $white;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Limit */ 
+.seat-map__limit {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($white, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    opacity: 0;
+}
+
+.seat-map__limit-content {
+    width: auto;
+    height: auto;
+    left: 50%;
+    right: auto;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    display: block;
+    text-align: center;
+}
+
+
+/* Modifiers */ 
+/**
+* Seat Colours & Types
+* Adds colored styles to symbolise a seat type.
+*/ 
+@each $key, $value in $seatTypes {
+    .seat--#{$key} {
+        fill: rgba($value, 0.3);
+        transition: 0.2s opacity ease;
+        /* Create Non Standard Effect (O) */
+        &.seat--non-standard {
+            fill: transparent;
+        }
+
+        &.seat--disabled {
+            fill: transparent;
+        }
+        /* Seat Selected */
+        &.seat--selected {
+            fill: $black;
+        }
+    }
+
+    [data-active-filters*="#{$key}"] {
+        .seat--#{$key} { 
+            fill: $value;
+        }
+    }
+}
+
+.seat--unavailable {
+    fill: $seatUnavailableColor;
+    box-shadow: inset 0px 0px 0px 1px rbga(#B2B2B2, .2);
+    stroke-width: 1px;
+    stroke: $seatUnavailableColor;
+}
+
+.seat--disabled {
+    background-color: transparent;
+    background-image: url(../images/svg/icons/disabled.svg);
+    background-size: cover;
+    background-position: center;
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    box-shadow:inset 0px 0px 0px 1px $black;
+}
+
+
+@media (max-width: 400px) { /* Change this to 400px, 800px for demo purpose */
+    .seat-map__controls {
+        display: flex;
+        flex-direction: row; /* For vertical placement of items */
+    }
+
+    .seat-map__container {
+        min-height: 400px;
+    }
+}

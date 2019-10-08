@@ -1,0 +1,7 @@
+/**
+* Rem Font Calculator
+* Takes HTML Font Size & Calculates The Appropriate Rem Value
+*/
+@function rem($value){
+    @return ($value / $htmlFontSize) * 1rem;
+}  

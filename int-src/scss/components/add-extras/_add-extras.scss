@@ -1,0 +1,109 @@
+/** 
+* Add Extras
+* Styles associated with the add extras page.
+*/
+
+/* Main Styles */
+.add-extras {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: $containerMaxSize;
+    margin: 0 auto;
+}
+
+.add-extras__intro {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+    max-width: 570px;
+}
+
+.add-extras__intro-title {
+    @include h1();
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: $black;
+}
+
+.add-extras__intro-text {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+}
+
+.add-extras__skip {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-extras__skip-text {
+    width: auto;
+    display: flex;
+}
+
+.add-extras__skip-btn {
+    align-self: flex-end;
+    margin-left: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.add-extras__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.add-extras__products {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.add-extras__summary {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Media Queries */ 
+@include mq($from: screen600) {
+    .add-extras__skip-btn {
+        align-self: flex-end;
+        margin-left: auto;
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+@include mq($from: screen1000) {
+    .add-extras__products {
+        width: 60%;
+        padding-right: 40px;
+    }
+
+    .add-extras__skip {
+        width: 60%;
+        padding-right: 30px;
+        margin-top: 0;
+    }
+
+    .add-extras__summary {
+        width: 40%;
+        margin-top: -20px;
+    }
+}

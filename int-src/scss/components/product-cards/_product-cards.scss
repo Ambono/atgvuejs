@@ -1,0 +1,287 @@
+/** 
+* Product Cards
+* Styles associated with the add product cards component.
+*/
+
+/* Main Styles */
+.product-cards {
+    width: 100%;
+    height: auto;
+    //display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.product-card {
+    width: 100%;
+    border: $productCardBorder;
+    height: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-radius: 2px;
+}
+
+.product-card__image {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    &:after {
+        /* 16:9 Ratio */
+        padding-top: 30%;
+        content: "";
+        display: block;
+    }
+}
+
+.product-card__image_ismobile {
+    float: right;
+    //width: 50%;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    //background-position: left;
+    padding-left: 50%;
+
+    &:after {
+        /* 16:9 Ratio */
+        padding-top: 30%;
+        content: "";
+        display: block;
+    }
+}
+.product-card__quantity-select_ismobile1 {
+    float: left;
+    width: 50%;
+    height: auto;
+    
+   
+}
+.product-card__quantity-select_ismobile {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.product-card__quantity-input_ismobile{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 2px;
+    border: $inputBorder;
+   
+
+}
+
+.product-card__content {
+    padding: 30px 20px;
+    background-color: $white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+
+.product-card__content_ismobile {
+    float: left;
+    background-color: $white;
+    display: flex;
+    flex-flow: column;//change here
+    align-items: flex-end;
+}
+
+.product-card__title {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.product-card__desc {
+    width: 100%;
+    display: block;
+    margin-bottom: 13px;
+}
+.product-card__desc_ismobile {
+    width: 100%;
+    display: block;
+    margin-bottom: 13px;
+}
+
+.product-card__price {
+    width: 100%;
+    font-size: 14px;
+}
+
+.product-card__price--large {
+    @include h4();;
+    color: $productCardPrice;
+    font-weight: bold;
+}
+.product-card__price--large_ismobile {
+    @include h4();;
+    font-weight: bold;
+}
+
+.product-card__quantity {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.product-card__quantity-title {
+    @include p();
+    font-weight: 600;
+}
+.product-card__quantity-title_ismobile {
+    @include p();
+    font-weight: 300;
+}
+
+.product-card__quantity-select {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.product-card__quantity-input {
+    width: 48px;
+    height: 48px;
+    margin: 0 10px;
+    border-radius: 2px;
+    border: $inputBorder;
+    text-align: center;
+    //padding-left: 0;
+}
+
+.product-card__btn {
+    width: 32px;
+    height: 32px;
+    min-width: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.product-card__btn_ismobile {
+    width: 20px;
+    height: 20px;
+    min-width: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.product-card__btn-icon {
+    width: 15px;
+    height: 15px;
+    fill: $white;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+
+.product-card__btn-icon_ismobile {
+    width: 15px;
+    height: 15px;
+    fill: $white;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/* Modifiers */
+/**
+* Half
+* Updates the card to be 50% width
+*/ 
+.product-card--half {
+    /* Defined within media queries */
+}
+
+/**
+* Horizontal
+* Updates the card to be 100% with horizontal displayed content
+*/
+.product-card--horizontal {
+    /* Defined within media queries */
+}
+
+/**
+* Full
+* Updates the card to be 100% with vertical content
+*/
+.product-card--full {
+    /* Defined within media queries */
+}
+
+/* Media Queries */ 
+@include mq($from: screen768) {
+
+    .product-card--half {
+        width: calc(50% - 15px);
+    
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+    }
+
+    .product-card--full {
+        .product-card__quantity {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+        }
+    
+        .product-card__quantity-title {
+            margin-right: 30px;
+        }
+        
+        .product-card__quantity-title_ismobile{
+            margin-right: 30px;
+        }
+    
+        .product-card__quantity-select {
+            margin-top: 0;
+        }
+    }
+
+    .product-card--horizontal {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    
+        .product-card__image {
+            width: 40%;
+            height: 100%;
+        }
+        .product-card__image_ismobile {
+            width: 40%;
+            height: 100%;
+        }
+        .product-card__content {
+            width: 60%;
+        }
+        .product-card__content_ismobile {
+            width: 60%;
+        }
+    }
+}
+
+@include mq($from: screen1000) {
+    .product-cards {     
+        // max-width: 900px;
+    }
+}
